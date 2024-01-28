@@ -1,0 +1,558 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6814180" data-tilda-page-id="36400467" data-tilda-page-alias="protests-07052023" data-tilda-formskey="830df9cd711c355d0c5afac616814180" data-tilda-lazy="yes"><div id="rec587997314" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px; " data-animationappear="off" data-record-type="967" ><!-- T967 --><div id="nav587997314marker"></div><div class="tmenu-mobile tmenu-mobile_positionfixed" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><div class="t-menuburger t-menuburger_first "><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('587997314');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec587997314 .tmenu-mobile__menucontent_fixed {
+position: fixed;
+top: 64px;
+}
+#rec587997314 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav587997314" class="t967 t967__positionstatic tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(255,255,255,1); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav587997314marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="1" data-menu-items-align="" data-menu="yes"><div class="t967__maincontainer t967__c12collumns"><div class="t967__top" style=""><div class="t967__logo"><div style="display: block;"><a href="/" style="color:#000000;"><img class="t967__imglogo " 
+src="images/tild3933-3434-4436-a436-623536353466__human_logo_1.png" 
+imgfield="img" 
+style="min-width:150px;"
+alt="HUMAN"
+></a></div></div><nav class="t967__listwrapper t967__mobilelist" 
+aria-label="Основные разделы на странице"><ul class="t967__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px 0 0;"><a class="t-menu__link-item" 
+href="http://humaaanmedia.tilda.ws"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#000000;font-weight:400;">Главная</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="news"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#000000;font-weight:400;">Новости</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="longreads"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#000000;font-weight:400;">Статьи и тексты</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="announcements"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#000000;font-weight:400;">Анонсы</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="about_us"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#000000;font-weight:400;">О нас</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 0 0 35px;"><a class="t-menu__link-item" 
+href="recomendations"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="6" 
+style="color:#000000;font-weight:400;">Редакция рекомендует</a></li></ul></nav><div class="t967__additionalwrapper"><div class="t-sociallinks"><div class="t-sociallinks__wrapper"><!-- new soclinks --><div class="t-sociallinks__item t-sociallinks__item_telegram"><a href="https://t.me/humaaanmedia" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#000000"/></svg></a></div><!-- /new soclinks --></div></div></div></div><div class="t967__bottom" ><div class="t967__middlelinewrapper"><div class="t967__linewrapper"><div class="t967__horizontalline" style=" "></div></div></div><div class="t967__bottomwrapper" style=""><nav class="t967__listwrapper t967__desktoplist" 
+aria-label="Основные разделы на странице"><ul class="t967__list t967__menualign_left" style="" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px 0 0;"><a class="t-menu__link-item" 
+href="http://humaaanmedia.tilda.ws" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#000000;font-weight:400;">Главная</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="news" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#000000;font-weight:400;">Новости</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="longreads" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#000000;font-weight:400;">Статьи и тексты</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="announcements" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#000000;font-weight:400;">Анонсы</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="about_us" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#000000;font-weight:400;">О нас</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 0 0 35px;"><a class="t-menu__link-item" 
+href="recomendations" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="6" 
+style="color:#000000;font-weight:400;">Редакция рекомендует</a></li></ul></nav></div></div></div></div><style>@media screen and (max-width: 980px) {
+#rec587997314 .tmenu-mobile{
+background-color: #ffffff;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec587997314 .t967__mobile-burger span{
+background-color: #000000;
+}
+}</style><script>t_onReady(function () {
+t_onFuncLoad('t967_setLogoPadding', function () {
+t967_setLogoPadding('587997314');
+});
+});
+t_onReady(function() {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t967__desktoplist .t967__list-item a');
+});
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+window.addEventListener('resize', t_throttle(function () {
+t_menu__setBGcolor('587997314', '.t967');
+}));
+});
+t_onReady(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('587997314', '.t967');
+});
+});</script><script>t_onReady(function () {
+var rec = document.querySelector('#rec587997314');
+if (!rec) return;
+var wrapperBlock = rec.querySelector('.t967');
+if (!wrapperBlock) return;
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('587997314', '.t967');
+});
+});</script><style>#rec587997314 .t-menu__link-item{
+-webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+position: relative;
+}
+#rec587997314 .t-menu__link-item:not(.t-active):not(.tooltipstered)::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 20%;
+opacity: 0;
+width: 100%;
+height: 100%;
+border-bottom: 2px solid #d1d1d1;
+-webkit-box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+-moz-box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#rec587997314 .t-menu__link-item.t-active:not(.t978__menu-link){
+color:#f4515d !important; }
+#rec587997314 .t-menu__link-item.t-active::after {
+content: '';
+position: absolute;
+left: 0;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+opacity: 1;
+width: 100%;
+height: 100%;
+bottom: -2px;
+border-bottom: 2px solid #f4515d;
+-webkit-box-shadow: inset 0px -1px 0px 0px #f4515d;
+-moz-box-shadow: inset 0px -1px 0px 0px #f4515d;
+box-shadow: inset 0px -1px 0px 0px #f4515d;
+}
+#rec587997314 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover{
+color: #000000 !important; }
+#rec587997314 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover::after{
+opacity: 1;
+bottom: -2px; }
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec587997314 .t-menu__link-item,
+#rec587997314 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><!--[if IE 8]><style>#rec587997314 .t967 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--></div><div id="rec587997315" class="r t-rec" style=" " data-animationappear="off" data-record-type="18" ><!-- cover --><div class="t-cover"
+id="recorddiv587997315"
+bgimgfield="img"
+style="height:100vh; background-image:url('images/tild6432-6137-4463-a339-333437616239__-__resize__20x__cover-arina.jpg');"
+><div class="t-cover__carrier" id="coverCarry587997315"data-content-cover-id="587997315"data-content-cover-bg="images/tild6432-6137-4463-a339-333437616239__cover-arina.jpg"data-display-changed="true"data-content-cover-height="100vh"data-content-cover-parallax="fixed"style="height:100vh; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6432-6137-4463-a339-333437616239__cover-arina.jpg"></div><div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#4c000000');"></div><div class="t-container"><div class="t-col t-col_12 "><div class="t-cover__wrapper t-valign_middle" style="height:100vh;"><div class="t001 t-align_center"><div class="t001__wrapper" data-hook-content="covercontent"><div class="t001__title t-title t-title_xl" style="" field="title"><p style="text-align: center;"><strong>Люди, которые изучают людей: опыт молодой исследовательницы</strong></p></div><span class="space"></span></div></div></div></div></div><!-- arrow --><div class="t-cover__arrow"><div class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated"><div class="t-cover__arrow_mobile"><svg role="presentation" class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592" style="enable-background:new 0 0 38.417 18.592;"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"/></g></svg></div></div></div><!-- arrow --></div></div><div id="rec587997316" class="r t-rec t-rec_pt_60 t-rec_pb_30" style="padding-top:60px;padding-bottom:30px; " data-record-type="127" ><!-- T119 --><div class="t119"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div class="t119__preface t-descr" style="opacity:0.70;" field="text"><div style="font-size: 24px;" data-customstyle="yes"> Люди, изучающие людей — в такой позиции оказываются исследователи-антропологи. Какие вопросы при этом их сопровождают, какие нюансы могут поджидать их «в поле» и почему человеческий опыт исследователя важен не меньше, чем итоговый результат работы? Чтобы узнать ответы на эти вопросы, корреспондентка редакции HUMAN Арина Ускова поговорила с выпускницей программы «Социология и антропология» Дарьей Лупенко. Исследовательница проводила собственное полевое исследование об экологических протестах на Шиесе против постройки мусорного полигона в 2019 году. </div></div></div></div></div></div><div id="rec588044267" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3961-6337-4538-a561-653066326466__humaaan_poligon.jpg"> <img class="t107__width t-width t-width_10 t-img" 
+src="images/tild3961-6337-4538-a561-653066326466__-__empty__humaaan_poligon.jpg" data-original="images/tild3961-6337-4538-a561-653066326466__humaaan_poligon.jpg" 
+imgfield="img"
+alt=""><div class="t-container_8"><div class="t-col t-col_8 t107__title t-text" style="" field="title" itemprop="name"><div style="font-size: 14px; line-height: 18px;" data-customstyle="yes"><p style="text-align: center;">Железнодорожная станция Шиес в Архангельской области | Таймлайн составлен на основе <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%82%D0%B5%D1%81%D1%82%D1%8B_%D0%B2_%D0%A8%D0%B8%D0%B5%D1%81%D0%B5#:~:text=8%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F%202019%20%D0%B3%D0%BE%D0%B4%D0%B0%20%D0%BD%D0%B0,%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BB%20%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8%20%D0%BF%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D0%BD%D0%B0%20%D0%A8%D0%B8%D0%B5%D1%81%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8."><u>материалов из открытого доступа</u></a>, Иван Кесорецких, HUMAN</p></div></div></div></div></div></div><div id="rec587997903" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Поскольку Дарья проводила полевое исследование еще будучи студенткой, в нашем тексте пойдет речь об опыте молодой исследовательницы, которой в свое время впервые пришлось столкнуться с нюансами полевой работы. Дарья использовала как социологические подходы к исследованию, а именно качественные интервью, так и антропологические – проводила включенное наблюдение, вела этнографические дневники.<strong></strong></div></div></div></div></div><div id="rec587998948" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong>— <em>Дарья, как проходило твое включенное наблюдение? Большую часть материалов ты получила, находясь на Шиесе, или уже после, например, во время общения с информантами?</em></strong></div></div></div></div></div><div id="rec587998978" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">У меня был метод смешанный. Я туда ехала брать качественные интервью и параллельно проводить включенное наблюдение. Дополнительными видами данных для анализа у меня были видео, опубликованные на Youtube, которые были в общем доступе, и текстовые записи самих жителей, активистов Шиеса, которые они оставляли в бортовом журнале – такой большой тетради, предназначенной для того, чтобы люди там писали свои отзывы об опыте пребывания на Шиесе, свои благодарности каким-то людям, свои какие-то надежды. Я спросила у местных активистов, которые занимались организацией жизни в лагере, можно ли будет анализировать эти записи из бортового журнала, и они дали добро. Но, по сути, большую часть своих данных я собирала именно на Шиесе, после этого я уже транскрибировала интервью, анализировала свои этнографические дневники, которые я писала в ходе своего включенного наблюдения, и дополнительно анализировала видео.</div></div></div></div></div><div id="rec587999002" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong>— <em>Интересно уточнить, насколько разной была информация из интервью и из дневников, и какая информация была, на твой взгляд, ценнее и интереснее? Возможно, возник какой-то новый интересный фокус на основе одного из источников?</em></strong></div></div></div></div></div><div id="rec587999180" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">В итоге инсайты, которые я получила для написания текста курсовой, я получила в первую очередь из своих дневников включенного наблюдения, то есть из этнографических данных. Но все виды данных – интервью, дневники и транскрипты видео, опубликованных в интернете – они все мне были ценны, потому что каждый из видов данных представлял определенный контекст, в котором наблюдалось что-то, чего не было других.<br /><br />В своем исследовании я писала про различия в том, как люди разговаривают о протесте, о противостоянии с принявшими решение о строительстве полигона, как они себя определяют, позиционируют. Люди по-разному говорили об этом в зависимости от того, было ли это анонимное интервью один на один с человеком, либо это было обсуждение между активистами в центральном лагере на Шиесе, либо публичные высказывания протестующих в видео, опубликованных для того, чтобы их увидели все россияне, и так далее. То есть люди по-разному говорили о своих ожиданиях от протеста, по-разному формулировали свои задачи, по-разному вообще определяли сами себя в зависимости от того, был контекст их высказываний публичным или приватным. Поэтому все виды данных мне помогли. Но на мысль о том, что дискурсивные практики людей (то, как люди говорят о чем-то — <em>Прим. автора</em>) зависят от контекста разговора, и между ними весомая разница, в первую очередь натолкнули мои дневники.</div></div></div></div></div><div id="rec587999497" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong>— <em>Как ты позиционировала себя в сообществе? Сразу ли ты сказала, что хотела бы изучить сообщество, или прошло какое-то время? Была ли какая-то смена отношения людей к тебе, как к исследователю?</em></strong></div></div></div></div></div><div id="rec588000059" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Первое, что я сделала, когда приехала – представилась как исследовательница, которая хочет собрать интересные данные, сопереживает протесту и хочет написать что-нибудь на эту тему (в идеале – свой диплом). Люди сразу задавали вопрос: “А как ты оказалась здесь через полстраны? Ты живешь в Тюмени, почему ты здесь?” Я отвечала: “Потому что я исследую экологические протесты, еще пару месяцев назад мы с коллегами уже собирали интервью у протестующих в Екатеринбурге, и я приехала на Шиес, потому что есть пересечения между вашими протестами: и там, и тут экологическая повестка, протесты региональные, то есть не в Москве и не в Санкт-Петербурге, поэтому я приехала к вам.” Поэтому люди сразу понимали, кто я, и после этого рассказа их отношение особо не менялось, поскольку моя идентичность в поле сразу была связана с определением меня как исследовательницы.<strong> </strong></div></div></div></div></div><div id="rec588000122" class="r t-rec t-rec_pt_30 t-rec_pb_45" style="padding-top:30px;padding-bottom:45px; " data-record-type="295" ><!-- t267 --><div class="t267"><div class="t-container"><div class="t-col t-col_8 t-prefix_2"><div class="t267__wrapper"><div class="t267__icon"><svg role="presentation" width="37px" height="31px" viewBox="0 0 37 31"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-701.000000, -4615.000000)" fill="#000000"><g transform="translate(701.000000, 4615.000000)"><path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path><path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path></g></g></g></svg></div><div class="t267__text t-text-impact t-text-impact_sm" style="" field="text">С другой стороны, мое <strong>собственное восприятие себя</strong> в поле менялось</div></div></div></div></div></div><div id="rec588000250" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">То есть я сначала входила в поле как исключительно исследовательница, потому что меня, на самом деле, до поездки на Шиес экологические вопросы не волновали. Я бы туда никогда не поехала и не заинтересовалась такими вопросами, если бы мои коллеги не предложили идею съездить на Шиес и сравнить его с Екатеринбургом. Потом уже, когда я там оказалась, я прониклась эмпатией и симпатией к активистам, их целями борьбы, и в контексте этого включенного наблюдения вовлеклась достаточно, чтобы начать искренне желать им успеха в их борьбе за Шиес, а потом и самой заниматься экоактивизмом. Например, вернувшись с Шиеса в Тюмень, я начала – и до сих пор продолжаю – заниматься раздельным сбором вторсырья и сдавать его на переработку. А пока жила в протестном лагере на Шиесе, я не только собирала данные, но и делала все то же, что и другие активисты: носила воду, рубила дрова, работала на общей кухне, стояла на наблюдательных постах. Я не только была исследовательницей, но и, с другой стороны, такой же экоактивисткой. Может быть в связи с этим, наоборот, изменилось отношение людей ко мне: сначала я входила в поле просто как исследовательница, а потом пожила с ними несколько недель, стала частью команды, частью сообщества протестующих. В своих дневниках я формулировала это так: мой мирок, в котором я живу, стал чуточку больше, стал включать в себя реальность Шиеса – даже если я уже не там, я все еще помню о нем и связана с ним.</div></div></div></div></div><div id="rec588000360" class="r t-rec t-rec_pt_30 t-rec_pb_45" style="padding-top:30px;padding-bottom:45px; " data-record-type="295" ><!-- t267 --><div class="t267"><div class="t-container"><div class="t-col t-col_8 t-prefix_2"><div class="t267__wrapper"><div class="t267__icon"><svg role="presentation" width="37px" height="31px" viewBox="0 0 37 31"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-701.000000, -4615.000000)" fill="#000000"><g transform="translate(701.000000, 4615.000000)"><path d="M9.2342197,31 L0.520616382,31 L12.8070131,0.73046875 L21.5206164,0.73046875 L9.2342197,31 Z"></path><path d="M24.5963811,31 L15.8827778,31 L28.1691745,0.73046875 L36.8827778,0.73046875 L24.5963811,31 Z"></path></g></g></g></svg></div><div class="t267__text t-text-impact t-text-impact_sm" style="" field="text">Важно <strong>рефлексировать опыт исследователя.</strong></div></div></div></div></div></div><div id="rec587997318" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Потому что этнография включает в себя автоэтнографию. Исследователь в поле становится частью исследуемой группы, и опыт исследователя становится частью пула данных. Ты начинаешь уже анализировать не только слова и действия других людей, но и свои собственные действия и переживания, потому что ты становишься не только исследователем в поле, но и частью поля. Важно рефлексировать, как твои действия влияют на поле, и как поле влияет на тебя, и это тоже часть метода включенного наблюдения.</div></div></div></div></div><div id="rec588000590" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong>— <em>Было ли какое-либо явное разделение между протестующими? Например, на основе политических взглядов?</em></strong></div></div></div></div></div><div id="rec587997320" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">С одной стороны, протест умудрился объединить людей с разными политическими, религиозными взглядами, просто разными мировоззрениями. Все уживались друг с другом, конфликтов на этой почве не возникало, потому что у жителей Шиеса словно была интуиция, что не нужно политизировать протест, не нужно говорить о политических разногласиях, потому что все могут рассориться.&nbsp; «Мы тут собрались ради экологии».<br /><br />С другой стороны, во вторую поездку я попала в период, когда назревал раскол в сообществе защитников Шиеса, в период «массовой паранойи» в лагере активистов, я так это называла в своих дневниках. Люди устали (протест на тот момент шел больше года), они жили в лесу, частично в изоляции от остального мира, они были напряжены, и возможно, были реальные предпосылки, что нужно подозрительно относиться к людям внутри сообщества Шиеса. Были упоминания о каких-то конфликтах: подробно мне про них не рассказывали, но основный посыл был в том, что среди своих могли затесаться люди, которые пытались бы выудить какую-то информацию и использовать ее против протестующих. В таком контексте гораздо больше было подозрений ко мне, как к исследовательнице, которая говорит, что собирает данные, предлагает дать интервью, записывает их на диктофон. Поэтому было гораздо больше опасений, стоит ли вообще со мной общаться. </div></div></div></div></div><div id="rec588001037" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong>— <em>В связи с тем, что ты ездила на Шиес дважды, насколько это повлияло на твое ощущение работы как исследовательницы? С одной стороны, ты уже упомянула, что во второй раз настроения были более панические, с другой стороны – это была уже твоя не первая поездка. Как ты воспринимала свою работу в поле в этом ключе?</em></strong></div></div></div></div></div><div id="rec588001205" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Я почувствовала, что у меня не было достаточного опыта и компетенций, чтобы разобраться с проблемой коллективного подозрения, с которой я столкнулась во второй раз. Поэтому я обращалась за советами к своим старшим коллегам, профессорам. В первый раз я уезжала с Шиеса с ощущением, что я очень хочу вернуться, что мне будут рады, и во второй раз ехала в поле с большим воодушевлением. Но именно из-за этого было по-человечески обидно, что в итоге я столкнулась с подозрением от моих информантов. Поэтому опыт второй поездки отличался от эйфории первой поездки. Во вторую поездку я столкнулась с проблемами, к которым я не была готова. Здорово, что у меня было сообщество коллег, из которых более опытные могли дать мне какие-то советы, как с этим справляться.<br /><br />Основное, с чем нужно разбираться, когда ты входишь в поле – это то, как нужно собирать данные. Нужно ли, например, каждый раз задавать вопрос: «А можно ли я сейчас буду наблюдать за вами?», или хватит один раз получить согласие? А если я пишу в дневниках наблюдений о своих переживаниях, то нужно ли мне спрашивать согласия у тех, с кем связаны мои переживания? Где граница между этнографией и автоэтнографией? Поэтому в каждом конкретном случае нужно уделять много внимания тому, как сделать свой метод соответствующим этическим принципам. Нужно продумать все так, чтобы собрать интересные данные, но и не попасть впросак и не навредить информантам своим исследованием. </div></div></div></div></div><div id="rec588001519" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="94" ><!-- T083 --><div class="t083"><div class="t-container"><div class="t-col t-col_10 t-prefix_1"><div class="t083__inner" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3035-6138-4266-b833-643639333061__image_2023-05-02_15-.png"><div class="t083__imgwrapper"><img class="t083__image t083__widthauto t-img" 
+src="images/tild3035-6138-4266-b833-643639333061__-__empty__image_2023-05-02_15-.png" data-original="images/tild3035-6138-4266-b833-643639333061__image_2023-05-02_15-.png" 
+imgfield="img"
+alt=""></div><div class="t083__textclass1 t-title" style="" 
+field="title" itemprop="name"><strong style="color: rgb(255, 125, 74);">Палаточный лагерь во время мусорного протеста на станции Шиес Архангельской области в июне 2019 года | Фото сделано участником протеста</strong></div></div></div></div></div></div><div id="rec588002125" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong>— <em>С момента твоих включенного наблюдения и интервью прошло уже несколько лет. Если бы протест на Шиесе проходил сейчас, и ты бы поехала его изучать, как бы ты организовала свое исследование? Например, обратила ли бы ты внимание на те же самые аспекты, или, возможно, сфокусировалась на каких-то других?</em></strong></div></div></div></div></div><div id="rec588002229" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">У меня получилось собрать данные, анализируя которые можно ответить на очень многие вопросы. Я писала свою курсовую, делая фокус на политизированности экологического протеста. Но очень многие данные остались нераскрытыми, неиспользованными для ответа на вопросы, которыми я задавалась в своем исследовании. Эти данные можно использовать для того, чтобы задать другие вопросы и ответить на них. Я надеюсь, что в ближайшем будущем у меня появятся силы и, может быть, мной будет придуман новый исследовательский проект, где можно будет использовать эти данные.<br /><br />Если бы я сейчас поехала на Шиес снова собирать данные и, если бы протест проходил сейчас, то, наверное,&nbsp; сделала бы тоже самое. Изначально я собирала данные, не поставив никакого четкого вопроса заранее – я просто поехала, чтобы узнать, что там происходит, почему люди туда поехали, почему они активизировались, хотя до этого не интересовались вопросами экологии, как они объясняют свой опыт, что это вообще за люди? Особой исследовательской рамки я старалась не ставить заранее, чтобы не ограничивать себя изначально. Старалась записывать все интересные и неинтересные штуки, они могли быть вообще друг с другом не связаны. В итоге фокус исследования появился уже после того, как я собрала все данные и посмотрела на весь пул данных. Я знаю, что&nbsp; сделала бы точно также. Хотя, конечно, это тоже хороший подход, когда ты стараешься сфокусироваться на чем-то одном – тогда у тебя больше времени и сил описать конкретно то, что тебя интересует. Тогда, например, мои дневники могли быть более подробными, это было бы здорово. Но мне больше нравится подход grounded theory, когда ты позволяешь данным самим натолкнуть тебя на какой-то исследовательский вопрос.</div></div></div></div></div><div id="rec588002342" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong>— <em>Был ли Шиес для тебя особенным исследовательским опытом?</em></strong></div></div></div></div></div><div id="rec588002377" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Для меня именно опыт полевого исследования, жизни в лагере активистов, ведение включенного наблюдения внесли весомый вклад в мою идентичность как исследовательницы. Когда я принималась за исследование протестов в Екатеринбурге и на Шиесе, я не была уверена, что готова связать свою жизнь с социологией. Но после поездки на Шиес я поняла, что я точно хочу и дальше этим заниматься. В идеале я хотела бы когда-нибудь провести такое же исследование, где нужно будет не просто сидеть за столом над данными, статьями и книгами, а ехать в поле, жить там и заниматься этнографией. Я вовлечена в несколько проектов, где я работаю с уже собранными данными, просто анализирую их. Но опыт работы в поле, интервью и наблюдения – он больше всего мне интересен, хотя другие мои исследования тоже очень ценны. Шиес стал для меня очень важным опытом.</div></div></div></div></div><div id="rec587997335" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong>Арина Ускова</strong></div></div></div></div></div><div id="rec587997336" class="r t-rec" style="background-color:#2b3a32; " data-animationappear="off" data-record-type="345" data-bg-color="#2b3a32"><!-- T345 --><div class="t345" id="footer_587997336"><div class="t345-wrapper" style="border-top: 1px solid;border-top-color: #2b3a32;"><div class="t345-container t-container"><div class="t345-col t-col t-col_12"><div class="t345-content" style="height:120px"><div class="t345-text__wrapper"><div class="t345-text t-descr t-descr_xxs" style="color:#ffffff;"><div style="font-size: 18px;" data-customstyle="yes"><strong>© Научная коммуникация ИТМО</strong></div></div></div><div class="t345-socials"></div></div></div></div></div></div><script>function checkSize_587997336(){
+var rec = document.querySelector('#footer_587997336');
+if (!rec) return;
+var textContentEl = rec.querySelector('.t345-text');
+var iconsContentEl = rec.querySelector('.t345-socials');
+if (!textContentEl || !iconsContentEl) return;
+var contentWidth = textContentEl.offsetWidth + iconsContentEl.offsetWidth;
+var container = rec.querySelector('.t345-container');
+var containerWidth = container.offsetWidth - 30;
+if (contentWidth > containerWidth && containerWidth > 0) {
+container.classList.add('t345-socials_block');
+}
+else {
+container.classList.remove('t345-socials_block');
+}
+}
+t_onReady(function() {
+t_onFuncLoad('checkSize_587997336', function(){
+checkSize_587997336();
+window.addEventListener('resize', t_throttle(function(){checkSize_587997336();}));
+if (typeof jQuery !== 'undefined') {
+$('#rec587997336').bind('displayChanged', function () {
+checkSize_587997336();
+});
+} else {
+var rec = document.querySelector('#rec587997336');
+if (!rec) return;
+rec.addEventListener('displayChanged', function () {
+checkSize_587997336();
+});
+}
+});
+});</script></div></div><!--/allrecords-->

@@ -1,0 +1,602 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6814180" data-tilda-page-id="35658277" data-tilda-page-alias="bdsm-010523" data-tilda-formskey="830df9cd711c355d0c5afac616814180" data-tilda-lazy="yes"><div id="rec585599589" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px; " data-animationappear="off" data-record-type="967" ><!-- T967 --><div id="nav585599589marker"></div><div class="tmenu-mobile tmenu-mobile_positionfixed" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><div class="t-menuburger t-menuburger_first "><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('585599589');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec585599589 .tmenu-mobile__menucontent_fixed {
+position: fixed;
+top: 64px;
+}
+#rec585599589 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav585599589" class="t967 t967__positionstatic tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(255,255,255,1); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav585599589marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="1" data-menu-items-align="" data-menu="yes"><div class="t967__maincontainer t967__c12collumns"><div class="t967__top" style=""><div class="t967__logo"><div style="display: block;"><a href="/" style="color:#000000;"><img class="t967__imglogo " 
+src="images/tild3933-3434-4436-a436-623536353466__human_logo_1.png" 
+imgfield="img" 
+style="min-width:150px;"
+alt="HUMAN"
+></a></div></div><nav class="t967__listwrapper t967__mobilelist" 
+aria-label="Основные разделы на странице"><ul class="t967__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px 0 0;"><a class="t-menu__link-item" 
+href="http://humaaanmedia.tilda.ws"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#000000;font-weight:400;">Главная</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="news"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#000000;font-weight:400;">Новости</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="longreads"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#000000;font-weight:400;">Статьи и тексты</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="announcements"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#000000;font-weight:400;">Анонсы</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="about_us"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#000000;font-weight:400;">О нас</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 0 0 35px;"><a class="t-menu__link-item" 
+href="recomendations"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="6" 
+style="color:#000000;font-weight:400;">Редакция рекомендует</a></li></ul></nav><div class="t967__additionalwrapper"><div class="t-sociallinks"><div class="t-sociallinks__wrapper"><!-- new soclinks --><div class="t-sociallinks__item t-sociallinks__item_telegram"><a href="https://t.me/humaaanmedia" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#000000"/></svg></a></div><!-- /new soclinks --></div></div></div></div><div class="t967__bottom" ><div class="t967__middlelinewrapper"><div class="t967__linewrapper"><div class="t967__horizontalline" style=" "></div></div></div><div class="t967__bottomwrapper" style=""><nav class="t967__listwrapper t967__desktoplist" 
+aria-label="Основные разделы на странице"><ul class="t967__list t967__menualign_left" style="" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px 0 0;"><a class="t-menu__link-item" 
+href="http://humaaanmedia.tilda.ws" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#000000;font-weight:400;">Главная</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="news" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#000000;font-weight:400;">Новости</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="longreads" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#000000;font-weight:400;">Статьи и тексты</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="announcements" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#000000;font-weight:400;">Анонсы</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="about_us" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#000000;font-weight:400;">О нас</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 0 0 35px;"><a class="t-menu__link-item" 
+href="recomendations" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="6" 
+style="color:#000000;font-weight:400;">Редакция рекомендует</a></li></ul></nav></div></div></div></div><style>@media screen and (max-width: 980px) {
+#rec585599589 .tmenu-mobile{
+background-color: #ffffff;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec585599589 .t967__mobile-burger span{
+background-color: #000000;
+}
+}</style><script>t_onReady(function () {
+t_onFuncLoad('t967_setLogoPadding', function () {
+t967_setLogoPadding('585599589');
+});
+});
+t_onReady(function() {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t967__desktoplist .t967__list-item a');
+});
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+window.addEventListener('resize', t_throttle(function () {
+t_menu__setBGcolor('585599589', '.t967');
+}));
+});
+t_onReady(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('585599589', '.t967');
+});
+});</script><script>t_onReady(function () {
+var rec = document.querySelector('#rec585599589');
+if (!rec) return;
+var wrapperBlock = rec.querySelector('.t967');
+if (!wrapperBlock) return;
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('585599589', '.t967');
+});
+});</script><style>#rec585599589 .t-menu__link-item{
+-webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+position: relative;
+}
+#rec585599589 .t-menu__link-item:not(.t-active):not(.tooltipstered)::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 20%;
+opacity: 0;
+width: 100%;
+height: 100%;
+border-bottom: 2px solid #d1d1d1;
+-webkit-box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+-moz-box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#rec585599589 .t-menu__link-item.t-active:not(.t978__menu-link){
+color:#f4515d !important; }
+#rec585599589 .t-menu__link-item.t-active::after {
+content: '';
+position: absolute;
+left: 0;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+opacity: 1;
+width: 100%;
+height: 100%;
+bottom: -2px;
+border-bottom: 2px solid #f4515d;
+-webkit-box-shadow: inset 0px -1px 0px 0px #f4515d;
+-moz-box-shadow: inset 0px -1px 0px 0px #f4515d;
+box-shadow: inset 0px -1px 0px 0px #f4515d;
+}
+#rec585599589 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover{
+color: #000000 !important; }
+#rec585599589 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover::after{
+opacity: 1;
+bottom: -2px; }
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec585599589 .t-menu__link-item,
+#rec585599589 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><!--[if IE 8]><style>#rec585599589 .t967 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--></div><div id="rec585599367" class="r t-rec" style=" " data-animationappear="off" data-record-type="18" ><!-- cover --><div class="t-cover"
+id="recorddiv585599367"
+bgimgfield="img"
+style="height:100vh; background-image:url('images/tild3462-3631-4762-b564-373564336431__-__resize__20x__cover_full.jpg');"
+><div class="t-cover__carrier" id="coverCarry585599367"data-content-cover-id="585599367"data-content-cover-bg="images/tild3462-3631-4762-b564-373564336431__cover_full.jpg"data-display-changed="true"data-content-cover-height="100vh"data-content-cover-parallax="fixed"style="height:100vh; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3462-3631-4762-b564-373564336431__cover_full.jpg"></div><div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#4c000000');"></div><div class="t-container"><div class="t-col t-col_12 "><div class="t-cover__wrapper t-valign_middle" style="height:100vh;"><div class="t001 t-align_center"><div class="t001__wrapper" data-hook-content="covercontent"><div class="t001__title t-title t-title_xl" style="" field="title"><strong>БДСМ: мои вкусы специфичны, но это не страшно (18+)</strong></div><span class="space"></span></div></div></div></div></div><!-- arrow --><div class="t-cover__arrow"><div class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated"><div class="t-cover__arrow_mobile"><svg role="presentation" class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592" style="enable-background:new 0 0 38.417 18.592;"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"/></g></svg></div></div></div><!-- arrow --></div></div><div id="rec585599821" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="127" ><!-- T119 --><div class="t119"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div class="t119__preface t-descr" style="opacity:0.70;" field="text"><div style="font-size: 24px;" data-customstyle="yes">Что первым приходит на ум при упоминании БДСМ? Люди с плётками и цепями? Мужчины в кожаных штанах и женщины в латексе? Унижение и боль? Может, классика литературы и кинематографа — «50 оттенков серого»? Или, для особо искушённых, его недавняя русская адаптация — фильм «Непослушная»? Каким бы ни был ответ, эти четыре буквы мало кого оставляют равнодушным. В этом тексте мы погрузимся в тёмные воды БДСМ-культуры и узнаем, почему, наперекор всем законам логики, людей возбуждает боль.<br /><br /><strong>⚠️ ВНИМАНИЕ! Текст предназначен для читателей старше 18 лет</strong></div></div></div></div></div></div><div id="rec585601136" class="r t-rec t-rec_pt_45 t-rec_pb_0" style="padding-top:45px;padding-bottom:0px; " data-record-type="223" ><!-- T195 --><div class="t195"><div class="t-container"><div class="t-col t-col_4 t-prefix_2"><div class="t195__text t-text t-text_md" style="" field="text"><strong style="font-size: 26px; color: rgb(221, 50, 102);">БДСМ — 4 буквы, которых на самом деле 6</strong><br />Аббревиатура БДСМ (BDSM) впервые возникла в начале 1990-х годов на интернет-форуме alt.sex.bondage. В полной форме она выглядит как BDDSSM и заключает в себе три типа взаимодействия.</div></div><div class="t-col t-col_5 t195__imgsection" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6466-3762-4039-b936-386665633462__bdsm_acronymsvg.png"> <img class="t195__img t-img" 
+src="images/tild6466-3762-4039-b936-386665633462__-__empty__bdsm_acronymsvg.png" data-original="images/tild6466-3762-4039-b936-386665633462__bdsm_acronymsvg.png" 
+imgfield="img" data-tu-max-width="1200" data-tu-max-height="1200"
+alt=""><br /><div class="t195__sectitle t-descr" style="" field="imgtitle" itemprop="name"></div><div class="t195__secdescr t-descr" style="" field="imgdescr" itemprop="description"></div></div></div></div></div><div id="rec585602386" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px;background-color:#f2f2f2; " data-record-type="24" data-bg-color="#f2f2f2"><!-- T007 --><div class="t007"><div class="t-container"><div class="t-row"><div class="t-col t-col_4"><div class="t007__text t-text t-text_md" style="" field="text"><strong style="font-size: 22px;">Bondage &amp; Discipline</strong><br />Бондаж и Дисциплина: бондаж (связывание, ограничение подвижности), дисциплинарные и ролевые игры, игровое подчинение и наказание</div></div><div class="t-col t-col_4"><div class="t007__text t-text t-text_md" style="" field="text2"><p style="text-align: left;"><strong style="font-size: 22px;">Domination &amp; Submission</strong></p><p style="text-align: left;">Господство и Подчинение: отношения с неравенством власти, возникающие только по предварительному обоюдному согласию участников</p></div></div><div class="t-col t-col_4"><div class="t007__text t-text t-text_md" style="" field="text3"><strong style="font-size: 22px;">Sadism &amp; Masochism</strong><br />Садизм и Мазохизм: садомазохизм, включающий практики, связанные с получением удовольствия от причинения или переживания физической боли</div></div> </div></div></div></div><div id="rec585604321" class="r t-rec t-rec_pt_45 t-rec_pb_15" style="padding-top:45px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong style="font-size: 26px; color: rgb(221, 50, 102);">БДСМ — это спектр</strong><br />Хотя БДСМ часто представляют как единую культуру, это понятие включает в себя множество различных практик и объединяет людей разной степени погруженности в тему. Можно представить это в виде спектра, на одном конце которого будут находиться нереализованные фантазии связанные с БДСМ-тематикой, а на другом — интенсивная и систематическая реализация этих «нетрадиционных» фантазий в разных аспектах повседневной жизни.<br /><br />Кто-то рассматривает БДСМ как единичные варианты сексуального взаимодействия, а кто-то определяет через этот термин свой стиль жизни, а иногда и свою <a href="https://pubmed.ncbi.nlm.nih.gov/26941021/" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>ориентацию</u></a>. <a href="https://pubmed.ncbi.nlm.nih.gov/11974644/" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>Исследования</u></a> показывают, что такие тематические интересы могут развиваться у человека со временем: сначала мы пробуем «легкие» практики, а затем погружаемся в более экстремальные форматы. Например, персона может начать экспериментировать с легких шлепков, а затем перейти на более сильные воздействия, как электрическая стимуляция или игры с иглами.<br /><br /><br /><strong style="font-size: 26px; color: rgb(221, 50, 102);">БДСМ — это добровольный дисбаланс власти</strong><br />БДСМ является «зонтичным понятием», покрывающим практики, которые могут применяться по одной или в разных комбинациях. При этом ядром БДСМ-культуры является согласованный дисбаланс власти во взаимодействии партнеров. Традиционно в БДСМ-практике есть доминирующий партнер (<strong>доминант</strong>, «верхний»), в руках которого находится власть и контроль за ситуацией, и <strong>сабмиссив </strong>(«нижний») — партнер, который добровольно соглашается на подчинение власти доминанта. Также есть <strong>свитчи </strong>(от англ. switch) — те, кто сочетают в себе желание подчинять и подчиняться.</div></div></div></div></div><div id="rec585605353" class="r t-rec" style=" " data-animationappear="off" data-record-type="131" ><!-- T123 --><div class="t123" ><div class="t-container t123__centeredContainer"><div class="t-col t-col_7 t-prefix_2">
+
+			<iframe title="Люди чаще фантазируют о том, чтобы играть сабмиссивную роль в БДСМ-практиках" aria-label="Split Bars" id="datawrapper-chart-aG87y" src="https://datawrapper.dwcdn.net/aG87y/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="314" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+			 
+			
+</div> </div></div></div><div id="rec585605391" class="r t-rec t-rec_pt_30 t-rec_pb_15" style="padding-top:30px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Роли в процессе взаимодействия могут меняться, неизменным остается неравенство власти. Дисбаланс власти может выражаться в очень разных форматах, например:<br /><ul><li>ролевые игры (например, pet play)</li><li>соблюдение ритуалов (стойка на коленях, использование титула для обращения к партнеру)</li><li>унижение (словесное, психологическое, физическое)</li><li>ограничение движения (шибари, использование наручников или цепей)</li><li>сенсорная депривация (повязка на глаза, асфиксия)</li><li>игры с болью (порка, использование прищепок, игры с ножом, игры с горячим воском)</li></ul></div></div></div></div></div><div id="rec585606100" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="223" ><!-- T195 --><div class="t195"><div class="t-container"><div class="t-col t-col_4 t-prefix_2"><div class="t195__text t-text t-text_md" style="" field="text">БДСМ-игры часто воспринимаются как прелюдия или часть сексуального взаимодействия. Есть <a href="https://pubmed.ncbi.nlm.nih.gov/24057208/" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>исследование</u></a>, показывающее, что люди с садомазохистскими интересами демонстрировали субъективные и физиологические проявления возбуждения, когда им описывали БДСМ-практики. Это подтверждает сексуальную природу такого опыта. Но также есть данные <a href="https://link.springer.com/article/10.1007/s11133-010-9158-9" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>исследования</u></a>, где респонденты утверждают, что такие практики являются самоцелью и не всегда совмещаются с сексуальными практиками.</div></div><div class="t-col t-col_5 t195__imgsection" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3236-6562-4332-a565-313263656232__gdtua--_1.png"> <img class="t195__img t-img" 
+src="images/tild3236-6562-4332-a565-313263656232__-__empty__gdtua--_1.png" data-original="images/tild3236-6562-4332-a565-313263656232__gdtua--_1.png" 
+imgfield="img" data-tu-max-width="1200" data-tu-max-height="1200"
+alt=""><br /><div class="t195__sectitle t-descr" style="" field="imgtitle" itemprop="name"></div><div class="t195__secdescr t-descr" style="" field="imgdescr" itemprop="description"></div></div></div></div></div><div id="rec585607271" class="r t-rec t-rec_pt_45 t-rec_pb_15" style="padding-top:45px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong style="color: rgb(221, 50, 102); font-size: 26px;">БДСМ обязательно оставляет за участниками право выбора</strong><br />Главное отличие БДСМ-практик от агрессивных или преступных действий определяется, прежде всего, жёстким соблюдением участниками правил безопасности и осознанным информированным согласием со стороны всех участников.<br /><br />Рассмотрим это на примере двух аббревиатур:<br /><br />❤️ <strong>SSC </strong>(<strong>S</strong>afe, <strong>S</strong>ane, <strong>C</strong>onsensual) — принцип <strong>БРД</strong>: <strong>Б</strong>езопасность, <strong>Р</strong>азумность, <strong>Д</strong>обровольность. Участники практики принимают в ней участие по своему согласию, осознанно и в трезвом уме (на БДСМ-вечеринках, например, часто запрещены алкогольные напитки и иные одурманивающие вещества), а также стараются соблюдать все необходимые меры безопасности в процессе.<br /><br />❤️ <strong>PRICK </strong>(<strong>P</strong>ersonal <strong>R</strong>esponsibility, <strong>I</strong>nformed, <strong>C</strong>onsensual <strong>K</strong>ink) — «ответственен за себя» + «проинформирован» + «кинк по обоюдному согласию». Все должны быть проинформированы о рисках, связанных с тем или иным взаимодействием, и при добровольном вступлении в практику, эти риски принимаются. Ответственность между участниками за успешно проведенную практику разделяется всеми участниками. Например, «нижний» партнер несет ответственность за информирование «верхнего» о своих медицинских противопоказаниях, правила БДСМ-практики оговариваются сторонами в той мере, в какой им обеим достаточно в рамках разумности (подписание договора, как в «50 оттенках серого», не обязательно).<br /><br /><strong>Принцип активного согласия</strong> распространяется на БДСМ-практики в полной мере, как и на любое другое сексуальное взаимодействие. Практика всегда может быть остановлена любым из участников. Главное — выбрать стоп-слово проще чем «флюгегехаймен».</div></div></div></div></div><div id="rec585609715" class="r t-rec t-rec_pt_0 t-rec_pb_15" style="padding-top:0px;padding-bottom:15px; " data-record-type="296" ><!-- t265 --><div class="t265"><div class="t-container"><div class="t-col t-col_8 t-prefix_2"><div class="t265__wrapper" style="background:#f2f2f2;"><div class="t265__icon"><svg role="img" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"><circle style="fill:#dd3266;" cx="12.125" cy="12.125" r="12"/><g><path style="fill: #fff;" d="M10.922,6.486c0-0.728,0.406-1.091,1.217-1.091s1.215,0.363,1.215,1.091c0,0.347-0.102,0.617-0.304,0.81
+c-0.202,0.193-0.507,0.289-0.911,0.289C11.328,7.585,10.922,7.219,10.922,6.486z M13.252,17.792h-2.234V9.604h2.234V17.792z"/></g></svg></div><div class="t265__text t-descr t-descr_xs" style="" field="text">Активное согласие — принцип, согласно которому любые сексуальные отношения допустимы только при наличии активного вербального согласия партнеров, данного в безопасных условиях. Согласие можно отозвать в любой момент взаимодействия.</div></div></div></div></div></div><div id="rec585609933" class="r t-rec t-rec_pt_45 t-rec_pb_15" style="padding-top:45px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong style="color: rgb(221, 50, 102); font-size: 26px;">БДСМ-щики среди нас</strong><br />БДСМ-интересы можно рассматривать с многомерной точки зрения. В зависимости от используемого определения БДСМ и методологии исследования, от 8 до 70% населения склонны к БДСМ. При этом меньшее количество практикующих готовы поделиться своими интересами с исследователями. Почему же так разнятся цифры?<br /><br />Количество людей, фантазирующих или практикующих БДСМ, сложно определить точно, например, в силу следующих факторов:<br /><ul><li>Субъективная интерпретация понятия БДСМ строже и жестче, чем просто описание практик, которые включает эта культура: если мы спрашиваем про БДСМ без объяснения термина, то положительные ответы встречается реже, чем если спросим про конкретные практик (связывание, завязывание глаз, шлепки, удушение и т.д.). Например, в <a href="https://academic.oup.com/jsm/article/5/7/1660/6862454" style="color: rgb(255, 168, 255);">этом </a>исследовании на вопрос "Участвовали ли вы в B&amp;D or S&amp;M за последние 12 месяцев?" положительно ответили только 2% мужчин и 1.4% женщин.</li></ul></div></div></div></div></div><div id="rec585608904" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px; " data-animationappear="off" data-record-type="131" ><!-- T123 --><div class="t123" ><div class="t-container "><div class="t-col t-col_7 t-prefix_2">
+
+			<iframe title="Если спросить не про БДСМ, а про конкретные &quot;легкие&quot; практики, то больше людей признаются в них" aria-label="Bar Chart" id="datawrapper-chart-X9Qt1" src="https://datawrapper.dwcdn.net/X9Qt1/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="383" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+			 
+			
+</div> </div></div></div><div id="rec585636856" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><ul><li>Все по-разному понимают глубину интереса в БДСМ и ощущения себя как части сообщества, даже если практикуют некоторые практики. Больше людей соглашаются с тем, что имели подобные фантазии, чем с тем, что имели такой опыт.</li><li>Опросы, которые проводятся в интернете и более анонимны, показывают больший процент вовлеченности в БДСМ, чем телефонные и очные опросы.</li><li>Некоторые опросы спрашивают про опыт в течение месяца/года, другие — про всю жизнь. Во втором случае, БДСМ-щиков открывается больше.</li></ul></div></div></div></div></div><div id="rec585609002" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="131" ><!-- T123 --><div class="t123" ><div class="t-container "><div class="t-col t-col_7 t-prefix_2">
+
+			<iframe title="Больше людей окажутся связаны с БДСМ-культурой, если мы спросим об их опыте за всю жизнь" aria-label="Bullet Bars" id="datawrapper-chart-Q4VEw" src="https://datawrapper.dwcdn.net/Q4VEw/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="308" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+			 
+			
+</div> </div></div></div><div id="rec585610844" class="r t-rec t-rec_pt_45 t-rec_pb_15" style="padding-top:45px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong style="color: rgb(221, 50, 102); font-size: 26px;">БДСМ — это не патология</strong><strong style="font-size: 26px;"> </strong><br />Включение сексуального садизма и сексуального мазохизма в перечень ментальных расстройств уходит корнями к работам Фрейда и Крафт-Эбинга, которые патологизировали данные интересы. Существует <a href="https://pubmed.ncbi.nlm.nih.gov/16803757/" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>мнение</u></a>, что они имели предвзятое отношение к этой теме, так как основывали свои суждения, опираясь на экстремальные проявления таких интересов (например, работы Маркиза де Сада), а также в силу консервативных взглядов на сексуальность в их эпоху. Но времена меняются, меняются и взгляды на то, как мы ставим диагнозы и что мы можем или не можем называть болезнью.<br /><br />В 10 редакции Международной классификации болезней (МКБ-10), разработанной Всемирной организацией здравоохранения, существовала рубрика F65 — Расстройства сексуального предпочтения с длинным перечнем диагнозов, включая садомазохизм.</div></div></div></div></div><div id="rec585611255" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#f2f2f2; " data-animationappear="off" data-record-type="585" data-bg-color="#f2f2f2"><!-- T585 --><div class="t585"><div class="t-container"><div class="t-col t-col_8 t-prefix_2"><div class="t585__accordion" data-accordion="false" data-scroll-to-expanded="false"><div class="t585__wrapper"><div class="t585__header " style="border-top: 1px solid #eee;"><button type="button" 
+class="t585__trigger-button" 
+aria-controls="accordion1_585611255" 
+aria-expanded="false"
+><span class="t585__title t-name t-name_xl" field="li_title__1480611044356" style=""><strong>Расстройства сексуального предпочтения по МКБ-10</strong></span><span class="t585__icon"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: transparent;"></span></span><span class="t585__icon t585__icon-hover"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: #eee;"></span></span></button></div><div class="t585__content" 
+id="accordion1_585611255"
+hidden ><div class="t585__textwrapper"><div class="t585__text t-descr t-descr_xs" field="li_descr__1480611044356" style="">F65.0 — Фетишизм<br />F65.1 — Фетишистский трансвестизм<br />F65.2 — Эксгибиционизм <br />F65.3 — Вуайеризм<br />F65.4 — Педофилия<br />F65.5 — Садомазохизм<br />F65.6 — Множественные расстройства сексуального предпочтения (например, одновременное присутствие фетишизма, трансвестизма и садомазохизма)<br />F65.8 — Другие расстройства сексуального предпочтения (например, зоофилия или некрофилия)<br />F65.9 — Расстройство сексуального предпочтения неуточненное</div></div></div></div></div><div class="t585__border" style="height: 1px; background-color: #eee;"></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t585_init', function () {
+t585_init('585611255');
+});
+});</script></div><div id="rec585612435" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">В 2019 году была принята пересмотренная МКБ-11, в которую были внесены и изменения в данных диагнозах.<br /><br />Подчеркивая возможный добровольный характер участия в некоторых сексуальных практиках, выделяются две группы отклонений:<br /><br />❤️ <strong>Сексуальные девиации (парафилия) </strong>— нетипичные сексуальные интересы (в т. ч. БДСМ-практики), которые не являются патологией и никому не причиняют вреда. Не включаются в МКБ-11.<br /><br />❌ <strong>Парафильные расстройства</strong> — фантазии, побуждения или действия сексуального характера, в отношении других лиц, не желающих или по своему возрасту или состоянию не способных дать свое согласие, а также создающие риск получения вреда.<br /><br />Таким образом специфические способы достижения сексуального возбуждения, являющиеся необычными, но не вызывающие дистресса, дисфункции или вреда здоровью окружающих и самому себе, не являются психическими заболеваниями.</div></div></div></div></div><div id="rec585612102" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#f2f2f2; " data-animationappear="off" data-record-type="585" data-bg-color="#f2f2f2"><!-- T585 --><div class="t585"><div class="t-container"><div class="t-col t-col_8 t-prefix_2"><div class="t585__accordion" data-accordion="false" data-scroll-to-expanded="false"><div class="t585__wrapper"><div class="t585__header " style="border-top: 1px solid #eee;"><button type="button" 
+class="t585__trigger-button" 
+aria-controls="accordion1_585612102" 
+aria-expanded="false"
+><span class="t585__title t-name t-name_xl" field="li_title__1480611044356" style=""><strong>Парафильные расстройства по МКБ-11&nbsp; </strong></span><span class="t585__icon"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: transparent;"></span></span><span class="t585__icon t585__icon-hover"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: #eee;"></span></span></button></div><div class="t585__content" 
+id="accordion1_585612102"
+hidden ><div class="t585__textwrapper"><div class="t585__text t-descr t-descr_xs" field="li_descr__1480611044356" style="">6D30 — Патологический эксгибиционизм <br />6D31 — Патологический вуайеризм&nbsp; <br />6D32 — Педофильное расстройство <br />6D33 — Патологический принудительный сексуальный садизм&nbsp; <br />6D34 — Патологический фроттеризм&nbsp; <br />6D35 — Другое парафильное расстройство с вовлечением других лиц без их согласия или в отношении других сексуальных объектов&nbsp; <br />6D36 — Парафильное расстройство с вовлечением других лиц или по обоюдному согласию&nbsp; <br />6D3Z — Парафилические расстройства, неуточненные</div></div></div></div></div><div class="t585__border" style="height: 1px; background-color: #eee;"></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t585_init', function () {
+t585_init('585612102');
+});
+});</script></div><div id="rec585613172" class="r t-rec t-rec_pt_0 t-rec_pb_15" style="padding-top:0px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><span style="font-size: 16px;">*В России МКБ-11 вступила в силу с 1 января 2022 года, но переход на нее был </span><a href="http://rushiv.ru/perehod-rossii-na-mezhdunarodnuyu-klassifikatsiyu-boleznej-mkb-11-budet-ostanovlen/#:~:text=%D0%9C%D0%9A%D0%91%20%E2%80%94%20%D1%8D%D1%82%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D1%8B%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F,%D1%81%201%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202022%20%D0%B3%D0%BE%D0%B4%D0%B0." style="color: rgb(255, 168, 255); font-size: 16px;"><u>приостановлен</u></a><span style="font-size: 16px;">.</span><br /><br /><br /><strong style="color: rgb(221, 50, 102); font-size: 26px;">БДСМ привлекательно </strong><br />Итак, увлечение БДСМ — не психическое заболевание. Тем не менее причины таких интересов еще недостаточно изучены в научной литературе. Но на примере одного из недавних <a href="https://www.tandfonline.com/doi/full/10.1080/00224499.2020.1767025?src=recsys" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>исследований</u></a> можно выделить как минимум три группы мотивации.</div></div></div></div></div><div id="rec585613640" class="r t-rec" style=" " data-animationappear="off" data-record-type="131" ><!-- T123 --><div class="t123" ><div class="t-container "><div class="t-col t-col_8 t-prefix_2">
+
+			<iframe title="В БДСМ-практиках людей зачастую привлекает обмен властью и само ощущение боли" aria-label="Bar Chart" id="datawrapper-chart-1yE91" src="https://datawrapper.dwcdn.net/1yE91/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="455" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+			 
+			
+</div> </div></div></div><div id="rec585613879" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Наиболее распространенная причина заниматься БДСМ-практиками связана с отказом от власти путем предоставления полного контроля кому-то другому (в форме ролевой игры) и/или посредством физического ограничения и контроля. Это еще раз подчеркивает мысль, что БДСМ-культура необязательно связана с получением боли. Игры с властью (power play) могут выступать самодостаточной практикой для изучения себя и своего партнера. Отмечается важность доверия к партнеру.<br /><br />Как среди населения в целом, так и среди практикующих БДСМ, женщины гораздо чаще, чем мужчины, находят сексуальное подчинение возбуждающим. В 70-е и 80-е годы известная <a href="https://scholar.google.com/scholar_lookup?hl=en&amp;volume=14&amp;publication_year=2011&amp;pages=129-150&amp;journal=%00null%00&amp;issue=2&amp;issn=%00null%00&amp;author=M.+Deckha&amp;title=Pain+as+culture%3A+A+postcolonial+feminist+approach+to+S%2FM+and+women%E2%80%99s+agency&amp;pmid=%00empty%00&amp;doi=%00empty%00" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>гипотеза</u></a> относительно этого феномена заключалась в том, что он был результатом патриархального общества, которое учило женщин вести себя таким образом.</div></div></div></div></div><div id="rec585619222" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="181" ><!-- T166 --><div class="t166"><div class="t-container"><div class="t-col t-col_6 t-prefix_2"><div class="t166__text t-text t-text_md" style="" field="text">Ответы респондентов подтверждают, что продолжительная и умеренная/интенсивная боль, полученная в эротическом контексте и по обоюдному согласию, может вызывать сексуальное возбуждение и глубокие изменения состояния ума, включая транс и экстаз. Такие состояния ума, достигаемые через физическую боль, также описываются в религиозных традициях*. Какими бы отталкивающими такие ритуалы ни казались внешнему наблюдателю, они связываются с трансцендентностью и приятными измененными состояниями сознания.</div> </div><div class="t-col t-col_4 "><div class="t166__textsmall t-text t-text_xs" style="" field="title">*Чрезвычайно болезненные практики, такие как подвешивание тела на металлических крюках («<a href="https://timesofindia.indiatimes.com/videos/toi-original/bagad-yatra-2023-history-significance-and-rituals-of-maharashtras-little-known-festival/videoshow/98640151.cms?from=mdr" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);">багад</a>») и хождение по огню, все еще были относительно распространены на юге Индии на протяжении всего 20-го века, несмотря на репрессии и законы против таких практик. А, например, самобичевание имеет долгую историю христианской преданности и покаяния, и его связывают с трансцендентностью, чувством священного и экстазом.</div></div> </div></div></div><div id="rec585621932" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Физическая боль <a href="https://scholar.google.com/scholar_lookup?hl=en&amp;publication_year=1984&amp;pages=%00empty%00&amp;author=G.+Mains&amp;isbn=%00null%00&amp;title=Urban+aboriginals" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>связана</u></a> с выработкой эндорфинов, которые обладают как обезболивающим, так и эйфорическим действием. Эндорфины — это нейропептиды, действующие на опиоидные рецепторы, которые снижают чувствительность к боли. Агонисты этих рецепторов (например, опиоидные препараты) вызывают не только обезболивание, но также эйфорию и, возможно, зависимость. И сейчас не только про наркотики. Физические нагрузки, которые могут сопровождаться болью, такие как бег на длинные дистанции или танцы, также <a href="https://scholar.google.com/scholar_lookup?title=Endocannabinoids%20and%20exercise&amp;author=A.%20Dietrich&amp;publication_year=2004&amp;journal=Br%20J%20Sports%20Med&amp;volume=38&amp;pages=536-541" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>могут привести</u></a> к похожему эффекту.<br /><br />Другими «измененными состояниями» ума от БДСМ, которые выделяют респонденты, являются расслабление и сфокусированное внимание. БДСМ-практики сравниваются с медитацией, которая помогает сосредоточить внимание на настоящем моменте и телесных ощущениях или реакциях, а также позволяет принять то, что происходит в данный момент (даже если это боль).<br /><br />Согласно исследованиям, участие в БДСМ может вызывать <a href="https://scholar.google.com/scholar_lookup?hl=en&amp;volume=13&amp;publication_year=2006&amp;pages=333-346&amp;journal=%00null%00&amp;issue=4&amp;issn=%00null%00&amp;author=D.+J.+Williams&amp;title=Different+%28Painful%21%29+strokes+for+different+folks%3A+A+general+overview+of+sexual+sadomasochism+%28SM%29+and+its+diversity&amp;pmid=%00empty%00&amp;doi=%00empty%00" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255);"><u>радость</u></a>, повышать уверенность в себе и других, способствовать установлению межличностных связей. Отмечается, что такие практики зачастую требуют физической и ментальной подготовки. Но при активном согласии и доверии они могут помочь исследовать желания, сексуальность и телесность, а также открыть новые виды досуга и сообщества.<br /><br /><br /><br /><strong>Настя Корсакова</strong><br /><span style="font-size: 16px;">p.s. Для тех, кто дочитал до конца, автор оставляет ссылку на</span><a href="https://bdsmtest.org/select-mode" target="_blank" rel="noreferrer noopener" style="color: rgb(255, 168, 255); font-size: 16px;"> тест</a><span style="font-size: 16px;"> на выявление фетишей</span><br /><br /></div></div></div></div></div><div id="rec585622558" class="r t-rec" style="background-color:#2b3a32; " data-animationappear="off" data-record-type="345" data-bg-color="#2b3a32"><!-- T345 --><div class="t345" id="footer_585622558"><div class="t345-wrapper" style="border-top: 1px solid;border-top-color: #2b3a32;"><div class="t345-container t-container"><div class="t345-col t-col t-col_12"><div class="t345-content" style="height:120px"><div class="t345-text__wrapper"><div class="t345-text t-descr t-descr_xxs" style="color:#ffffff;"><div style="font-size: 18px;" data-customstyle="yes"><strong>© Научная коммуникация ИТМО</strong></div></div></div><div class="t345-socials"></div></div></div></div></div></div><script>function checkSize_585622558(){
+var rec = document.querySelector('#footer_585622558');
+if (!rec) return;
+var textContentEl = rec.querySelector('.t345-text');
+var iconsContentEl = rec.querySelector('.t345-socials');
+if (!textContentEl || !iconsContentEl) return;
+var contentWidth = textContentEl.offsetWidth + iconsContentEl.offsetWidth;
+var container = rec.querySelector('.t345-container');
+var containerWidth = container.offsetWidth - 30;
+if (contentWidth > containerWidth && containerWidth > 0) {
+container.classList.add('t345-socials_block');
+}
+else {
+container.classList.remove('t345-socials_block');
+}
+}
+t_onReady(function() {
+t_onFuncLoad('checkSize_585622558', function(){
+checkSize_585622558();
+window.addEventListener('resize', t_throttle(function(){checkSize_585622558();}));
+if (typeof jQuery !== 'undefined') {
+$('#rec585622558').bind('displayChanged', function () {
+checkSize_585622558();
+});
+} else {
+var rec = document.querySelector('#rec585622558');
+if (!rec) return;
+rec.addEventListener('displayChanged', function () {
+checkSize_585622558();
+});
+}
+});
+});</script></div></div><!--/allrecords-->

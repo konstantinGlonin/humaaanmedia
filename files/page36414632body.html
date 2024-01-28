@@ -1,0 +1,566 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6814180" data-tilda-page-id="36414632" data-tilda-page-alias="tattoos-070523" data-tilda-formskey="830df9cd711c355d0c5afac616814180" data-tilda-lazy="yes"><div id="rec588212949" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px; " data-animationappear="off" data-record-type="967" ><!-- T967 --><div id="nav588212949marker"></div><div class="tmenu-mobile tmenu-mobile_positionfixed" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><div class="t-menuburger t-menuburger_first "><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('588212949');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec588212949 .tmenu-mobile__menucontent_fixed {
+position: fixed;
+top: 64px;
+}
+#rec588212949 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav588212949" class="t967 t967__positionstatic tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(255,255,255,1); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav588212949marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="1" data-menu-items-align="" data-menu="yes"><div class="t967__maincontainer t967__c12collumns"><div class="t967__top" style=""><div class="t967__logo"><div style="display: block;"><a href="/" style="color:#000000;"><img class="t967__imglogo " 
+src="images/tild3933-3434-4436-a436-623536353466__human_logo_1.png" 
+imgfield="img" 
+style="min-width:150px;"
+alt="HUMAN"
+></a></div></div><nav class="t967__listwrapper t967__mobilelist" 
+aria-label="Основные разделы на странице"><ul class="t967__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px 0 0;"><a class="t-menu__link-item" 
+href="http://humaaanmedia.tilda.ws"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#000000;font-weight:400;">Главная</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="news"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#000000;font-weight:400;">Новости</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="longreads"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#000000;font-weight:400;">Статьи и тексты</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="announcements"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#000000;font-weight:400;">Анонсы</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="about_us"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#000000;font-weight:400;">О нас</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 0 0 35px;"><a class="t-menu__link-item" 
+href="recomendations"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="6" 
+style="color:#000000;font-weight:400;">Редакция рекомендует</a></li></ul></nav><div class="t967__additionalwrapper"><div class="t-sociallinks"><div class="t-sociallinks__wrapper"><!-- new soclinks --><div class="t-sociallinks__item t-sociallinks__item_telegram"><a href="https://t.me/humaaanmedia" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#000000"/></svg></a></div><!-- /new soclinks --></div></div></div></div><div class="t967__bottom" ><div class="t967__middlelinewrapper"><div class="t967__linewrapper"><div class="t967__horizontalline" style=" "></div></div></div><div class="t967__bottomwrapper" style=""><nav class="t967__listwrapper t967__desktoplist" 
+aria-label="Основные разделы на странице"><ul class="t967__list t967__menualign_left" style="" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px 0 0;"><a class="t-menu__link-item" 
+href="http://humaaanmedia.tilda.ws" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#000000;font-weight:400;">Главная</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="news" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#000000;font-weight:400;">Новости</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="longreads" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#000000;font-weight:400;">Статьи и тексты</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="announcements" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#000000;font-weight:400;">Анонсы</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="about_us" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#000000;font-weight:400;">О нас</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 0 0 35px;"><a class="t-menu__link-item" 
+href="recomendations" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="6" 
+style="color:#000000;font-weight:400;">Редакция рекомендует</a></li></ul></nav></div></div></div></div><style>@media screen and (max-width: 980px) {
+#rec588212949 .tmenu-mobile{
+background-color: #ffffff;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec588212949 .t967__mobile-burger span{
+background-color: #000000;
+}
+}</style><script>t_onReady(function () {
+t_onFuncLoad('t967_setLogoPadding', function () {
+t967_setLogoPadding('588212949');
+});
+});
+t_onReady(function() {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t967__desktoplist .t967__list-item a');
+});
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+window.addEventListener('resize', t_throttle(function () {
+t_menu__setBGcolor('588212949', '.t967');
+}));
+});
+t_onReady(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('588212949', '.t967');
+});
+});</script><script>t_onReady(function () {
+var rec = document.querySelector('#rec588212949');
+if (!rec) return;
+var wrapperBlock = rec.querySelector('.t967');
+if (!wrapperBlock) return;
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('588212949', '.t967');
+});
+});</script><style>#rec588212949 .t-menu__link-item{
+-webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+position: relative;
+}
+#rec588212949 .t-menu__link-item:not(.t-active):not(.tooltipstered)::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 20%;
+opacity: 0;
+width: 100%;
+height: 100%;
+border-bottom: 2px solid #d1d1d1;
+-webkit-box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+-moz-box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#rec588212949 .t-menu__link-item.t-active:not(.t978__menu-link){
+color:#f4515d !important; }
+#rec588212949 .t-menu__link-item.t-active::after {
+content: '';
+position: absolute;
+left: 0;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+opacity: 1;
+width: 100%;
+height: 100%;
+bottom: -2px;
+border-bottom: 2px solid #f4515d;
+-webkit-box-shadow: inset 0px -1px 0px 0px #f4515d;
+-moz-box-shadow: inset 0px -1px 0px 0px #f4515d;
+box-shadow: inset 0px -1px 0px 0px #f4515d;
+}
+#rec588212949 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover{
+color: #000000 !important; }
+#rec588212949 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover::after{
+opacity: 1;
+bottom: -2px; }
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec588212949 .t-menu__link-item,
+#rec588212949 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><!--[if IE 8]><style>#rec588212949 .t967 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--></div><div id="rec588212950" class="r t-rec" style=" " data-animationappear="off" data-record-type="18" ><!-- cover --><div class="t-cover"
+id="recorddiv588212950"
+bgimgfield="img"
+style="height:100vh; background-image:url('images/tild3663-3138-4163-a531-656630383565__-__resize__20x__image_2023-05-07_15-.png');"
+><div class="t-cover__carrier" id="coverCarry588212950"data-content-cover-id="588212950"data-content-cover-bg="images/tild3663-3138-4163-a531-656630383565__image_2023-05-07_15-.png"data-display-changed="true"data-content-cover-height="100vh"data-content-cover-parallax="fixed"style="height:100vh; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3663-3138-4163-a531-656630383565__image_2023-05-07_15-.png"></div><div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#4c000000');"></div><div class="t-container"><div class="t-col t-col_12 "><div class="t-cover__wrapper t-valign_middle" style="height:100vh;"><div class="t001 t-align_center"><div class="t001__wrapper" data-hook-content="covercontent"><div class="t001__title t-title t-title_xl" style="" field="title"><p style="text-align: center;">Татуировки антропологической редакции: истории на коже</p></div><span class="space"></span></div></div></div></div></div><!-- arrow --><div class="t-cover__arrow"><div class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated"><div class="t-cover__arrow_mobile"><svg role="presentation" class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592" style="enable-background:new 0 0 38.417 18.592;"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"/></g></svg></div></div></div><!-- arrow --></div></div><div id="rec588212951" class="r t-rec t-rec_pt_45 t-rec_pb_30" style="padding-top:45px;padding-bottom:30px; " data-record-type="127" ><!-- T119 --><div class="t119"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div class="t119__preface t-descr" style="opacity:0.70;" field="text"><div style="font-size: 24px;" data-customstyle="yes">Татуировки – это вид искусства, который присутствует в жизни человечества уже несколько тысячелетий.</div></div></div></div></div></div><div id="rec588212952" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong> </strong>Надписи на мумиях, найденных в Египте, <a href="https://nplus1.ru/news/2018/03/01/tattoo"><u>указывают</u></a>, что татуировки были распространены в древнем мире. У индейцев, например, татуировки использовались для обозначения территории и племени. Китайские же татуировки, с другой стороны, <a href="https://naked-science.ru/article/history/letopis-na-kozhe-zachem-drevnie-lyudi-nanosili-na-telo-tatuirovki-i-chto-oni-oznachayut"><u>являлись</u></a> клеймом и ими отмечались исключительно преступники.<br /><br />А что же значат татуировки сейчас? В современных временах татуировки все чаще являются выражением личности и являются способом выражения своих установок и интересов. Татуировки могут отображать любые ценности: любовь к спортивному клубу, животному или человеку.<br /><br />Кроме того, сейчас татуировки могут иметь и эстетическое значение. Дизайн, техническое исполнение, место на теле обладают индивидуальным значением! В этом материале некоторые люди из нашей антропологической редакции расскажут о своих татуировках, чтобы на своем собственном примере показать, как одно слово может различаться у каждого из нас.<br /><br /></div></div></div></div></div><div id="rec588214100" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size:26px;" data-customstyle="yes"><strong>Александра Корягина</strong></div></div></div></div></div></div><div id="rec588213504" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="665" ><!-- T665 --><div class="t665"><div class="t-container"><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1491922643181" style="" itemprop="text"><div style="font-size:18px;" data-customstyle="yes">Что означает твоя татуировка для тебя?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1491922643181" style="text-transform:uppercase;" itemprop="name"><strong>Александра</strong><br /><br /></div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1491922643181" style="" itemprop="text"><div style="font-size:18px;" data-customstyle="yes">Моя татуировка в прямом смысле дает мне чувство уверенности в собственных силах. В переводе с немецкого эта надпись означает максимально избитую в обществе фразу: «Что не убивает, делает меня сильнее».</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div></div></div></div><div id="rec588212955" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="182" ><!-- T167 --><div class="t167"><div class="t-container"><div class="t-prefix_2 t-col t-col_10"><div class="t-col t-col_5 t167__imgblock" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3063-3737-4534-b666-303766363565__noroot.png"> <img class="t167__img t-img" 
+src="images/tild3063-3737-4534-b666-303766363565__-__empty__noroot.png" data-original="images/tild3063-3737-4534-b666-303766363565__noroot.png" 
+imgfield="img" data-tu-max-width="920" data-tu-max-height="920"
+alt=""><div class="t167__imgdescr t-descr" style="" field="imgdescr" itemprop="description"><p style="text-align: center;">Фотография татуировки Александры Корягиной | HUMAN</p></div></div><div class="t-col t-col_8" style="margin:0; float:none; display:inherit;"><div field="text" class="t167__text t-text t-text_md" style=""><strong> </strong>Я набила её в 16 лет, а сама идея сделать тату принадлежала маме с папой. Они считали, что я разумно отнесусь к выбору рисунка и места татуировки, чтобы в будущем об этом не жалеть. Так и получилось: спустя 8 лет я её не замечаю, зато чувствую всем сердцем.<br /><br />Выбор надписи отнюдь не случаен. Тогда, много лет назад, моя жизнь стремительно менялась, а почвы под ногами я не чувствовала. И тогда я начала погружаться в депрессию, которая длилась несколько лет. Мне казалось, что мне ничего не принадлежит, кроме моего тела и разума. И тогда единственным действенным методом снизить градус этих страданий стала татуировка. Она была и есть неотъемлемой частью меня, которая постоянно напоминает о силе, которой я обладаю, раз смогла пройти сквозь такие тёмные времена.</div></div></div></div></div></div><div id="rec588213847" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="665" ><!-- T665 --><div class="t665"><div class="t-container"><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Почему именно это изображение отображает главную идею запечатления?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1491922643181" style="text-transform:uppercase;" itemprop="name">Александра<br /><br /></div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Все мы близки к смерти физической, но смерть душевная намного страшнее. Я боялась, что обстоятельства непреодолимой силы забирают каждый раз по кусочку моей души, оставляя мне лишь апатию и недоверие к людям. Поэтому надпись «Что не убивает, делает меня сильнее» значит для меня больше, чем люди обычно вкладывают в эту фразу. В том числе поэтому я и сделала надпись на немецком, как она звучит в оригинале. Это даёт преимущество – делает тату личной, поскольку немецкий язык не так популярен, как английский. А готический шрифт с засечками очень похож на мой почерк и одновременно добавляет решимости и жесткости.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1683500694756" style="" itemprop="text"><div style="font-size:18px;" data-customstyle="yes">Что значит татуировка как явление для человека на твой взгляд?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1683500694756" style="text-transform:uppercase;" itemprop="name">Александра<br /><br /></div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1683500694756" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Большинство моих знакомых имеют тату. И для каждого это способ выразить то, что не всегда получается словами. Тело человека – не информационная доска для всех прохожих. Скорее это отражение их души в определенный период. И каждый образ, каждая надпись имеют значение.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div></div></div></div><div id="rec588214134" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 26px;" data-customstyle="yes"><strong>Татьяна Мелентьева</strong></div></div></div></div></div></div><div id="rec588214203" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="665" ><!-- T665 --><div class="t665"><div class="t-container"><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Что означает твоя татуировка для тебя?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1491922643181" style="text-transform:uppercase;" itemprop="name">Татьяна</div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Это контур озера – Байкала. Это напоминание о том, откуда я и кто я есть. Дело в том, что я из Иркутской области и для нашего региона Байкал имеет большое значение. Это наша гордость и даже какая-то мифическая история, потому что озеро – это невероятное место, куда ты приезжаешь отдыхать, абстрагируясь от всего мира. Медитативно.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div></div></div></div><div id="rec588212956" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="182" ><!-- T167 --><div class="t167"><div class="t-container"><div class="t-prefix_2 t-col t-col_10"><div class="t-col t-col_5 t167__imgblock" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3433-6636-4262-b038-393832353263__noroot.png"> <img class="t167__img t-img" 
+src="images/tild3433-6636-4262-b038-393832353263__-__empty__noroot.png" data-original="images/tild3433-6636-4262-b038-393832353263__noroot.png" 
+imgfield="img" data-tu-max-width="920" data-tu-max-height="920" data-zoomable="yes" data-img-zoom-url="images/tild3433-6636-4262-b038-393832353263__noroot.png" alt=""><div class="t167__imgdescr t-descr" style="" field="imgdescr" itemprop="description"><p style="text-align: center;">Фотография татуировки Татьяны Мелентьевой | HUMAN</p></div></div><div class="t-col t-col_8" style="margin:0; float:none; display:inherit;"><div field="text" class="t167__text t-text t-text_md" style=""><strong> </strong>Я помню каждую свою поездку на Байкал, а ездила я в разные точки и места. Это всегда было нечто особенное и неповторимое. И мне хотелось эту память увековечить на себе.<br /><br />Это была моя первая татуировка и я очень боялась, что мне не понравится, поэтому я решила сделать ее за ухом, на очень незаметном месте. Я вспоминаю про эту татуировку раз в год, когда кто-то ее замечает. Но сам факт того, что она у меня есть, много для меня значит.<br /><br /></div></div></div></div></div></div><div id="rec588214396" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="665" ><!-- T665 --><div class="t665"><div class="t-container"><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Почему именно это изображение отображает главную идею запечатления?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1491922643181" style="text-transform:uppercase;" itemprop="name">Татьяна</div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Это географический контур места, около которого я родилась. Мне почему-то кажется очень красивым и правильным.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1683500694756" style="" itemprop="text"><div style="font-size:18px;" data-customstyle="yes">Что значит татуировка как явление для человека на твой взгляд?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1683500694756" style="text-transform:uppercase;" itemprop="name">Татьяна<br /><br /></div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1683500694756" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Я не готова отвечать за всех, потому что мне кажется, что для всех это разная история. Для кого-то это способ пережить момент, для кого-то просто украсить тело. Для меня – это психологический момент. Способ вернуть себя себе, подчеркнуть, кто я есть. И запечатлеть, кто я есть, ведь татуировка всегда связана с историей. Я воспринимаю это как своего рода терапию. Особенно мои первые две татуировки, которые я набивала в технике хэндпоук. Какой-то психологизм в татуировке точно есть!</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div></div></div></div><div id="rec588214415" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 26px;" data-customstyle="yes"><strong>Анастасия Корсакова</strong></div></div></div></div></div></div><div id="rec588214416" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="665" ><!-- T665 --><div class="t665"><div class="t-container"><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Что означает твоя татуировка для тебя?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1491922643181" style="text-transform:uppercase;" itemprop="name">Анастасия</div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Мы хотели с моей младшей сестрой сделать парные татуировки, но так как у нас очень разные вкусы, очень долго не могли выбрать эскиз. После долгих размышлений мы наши мастерицу, у которой среди эскизов был этот голубь мира Пикассо. И мы вспомнили, что нам объединяет любовь к искусству. Поэтому решили, что набьем картины Пикассо.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div></div></div></div><div id="rec588214602" class="r t-rec t-rec_pt_30 t-rec_pb_0" style="padding-top:30px;padding-bottom:0px; " data-animationappear="off" data-record-type="667" ><!-- t667 --><div class="t667"><div class="t667__container t-container "><div class="t667__row t667__row_indent-20px t-row"><div class="t667__tile t667__tile_left" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3136-3534-4831-b963-626430613363__img_7719.jpg"> <div class="t667__bgimg t667__bgimg_1-1 t-bgimg" data-original="images/tild3136-3534-4831-b963-626430613363__img_7719.jpg" 
+bgimgfield="gi_img__0" data-zoomable="yes" data-zoom-target="0" data-img-zoom-url="images/tild3136-3534-4831-b963-626430613363__img_7719.jpg" 
+style="background: url('images/tild3136-3534-4831-b963-626430613363__-__resizeb__20x__img_7719.jpg') center center no-repeat;background-size: cover;"
+></div></div><div class="t667__tile t667__tile_right" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6435-6133-4562-a366-623333663565__img_7720.jpg"> <div class="t667__bgimg t667__bgimg_1-1 t-bgimg" data-original="images/tild6435-6133-4562-a366-623333663565__img_7720.jpg" 
+bgimgfield="gi_img__1" data-zoomable="yes" data-zoom-target="1" data-img-zoom-url="images/tild6435-6133-4562-a366-623333663565__img_7720.jpg" 
+style="background: url('images/tild6435-6133-4562-a366-623333663565__-__resizeb__20x__img_7720.jpg') center center no-repeat;background-size: cover;"
+></div></div></div></div></div></div><div id="rec588214943" class="r t-rec t-rec_pt_0 t-rec_pb_30" style="padding-top:0px;padding-bottom:30px; " data-record-type="56" ><!-- T046 --><div class="t046"><div class="t-container"><div class="t-col t-col_6 t-prefix_3"><div class="t046__text t-text t-text_xs" style="" field="text"><div style="font-size:14px;" data-customstyle="yes"><p style="text-align: center;">Фотографии татуировки Анастасии Корсаковой | HUMAN</p></div></div></div></div></div></div><div id="rec588214789" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="665" ><!-- T665 --><div class="t665"><div class="t-container"><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Почему именно это изображение отображает главную идею запечатления?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1491922643181" style="text-transform:uppercase;" itemprop="name">Анастасия</div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Я решила оставить этот же эскиз, потому что он имеет очевидно дополнительный смысл – стремление к миру. Тут и добавлять нечего.<br /><br />А буквально в процессе перевода эскиза в салоне я решила добавить к нему слово «amen». Но оно не связано с тем, о чем вы подумали! В одном из моих любимых шоу ведущая в конце каждого эпизода говорит участникам:<br /><br /><em>«If you don't love yourself, how in the hell you gonna love somebody else? Can I get an amen?»</em><br /><br />Вот, это слово мне каждый раз напоминает об этом.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1683502235260" style="" itemprop="text"><div style="font-size:18px;" data-customstyle="yes">Что значит татуировка как явление для человека на твой взгляд?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1683502235260" style="text-transform:uppercase;" itemprop="name">Анастасия</div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1683502235260" style="" itemprop="text"><div style="font-size:18px;" data-customstyle="yes">Татуировка как явление для человека... Наверное, это что-то про формирование образа себя и самовыражения. Татуировки, как прическа или одежда – это то, что ты можешь выбрать для себя и сказать: это часть меня и моей жизни. Уникальной и наполненной чудесными деталями.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div></div></div></div><div id="rec588214974" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><div style="font-size: 26px;" data-customstyle="yes"><strong>Арина Ускова</strong></div></div></div></div></div></div><div id="rec588214985" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="665" ><!-- T665 --><div class="t665"><div class="t-container"><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1491922643181" style="" itemprop="text"><div style="font-size:18px;" data-customstyle="yes">Что означает твоя татуировка для тебя?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1491922643181" style="text-transform:uppercase;" itemprop="name">Арина</div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">У меня две (две с половиной татуировки), четкое значение есть только у первой. Это надпись «dum spiro spero» на левой руке, с латыни это переводится как «пока дышу, надеюсь».<strong> </strong></div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div></div></div></div><div id="rec588214427" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="182" ><!-- T167 --><div class="t167"><div class="t-container"><div class="t-prefix_2 t-col t-col_10"><div class="t-col t-col_5 t167__imgblock" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3334-3261-4162-a136-353030323064__noroot.png"> <img class="t167__img t-img" 
+src="images/tild3334-3261-4162-a136-353030323064__-__empty__noroot.png" data-original="images/tild3334-3261-4162-a136-353030323064__noroot.png" 
+imgfield="img" data-tu-max-width="920" data-tu-max-height="920" data-zoomable="yes" data-img-zoom-url="images/tild3334-3261-4162-a136-353030323064__noroot.png" alt=""><div class="t167__imgdescr t-descr" style="" field="imgdescr" itemprop="description"><p style="text-align: center;">Фотография татуировки Арины Усковой | HUMAN</p></div></div><div class="t-col t-col_8" style="margin:0; float:none; display:inherit;"><div field="text" class="t167__text t-text t-text_md" style=""><strong> </strong>В 2018 году меня сбила машина на пешеходном переходе, и тогда я хорошо запомнила чувство, которое появляется за секунду до того, как тебя сбивают — очень хочется жить. И все проблемы сразу же кажутся не такими глобальными! В общем, я тогда пострадала не сильно и быстро оправилась, а через полгода это чувство начало забываться. И я набила эту надпись, чтобы напоминать себе, что всё возможно, пока я жива, и быть живой — самое крутое и главное в жизни.<br /><br /></div></div></div></div></div></div><div id="rec588215114" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-record-type="182" ><!-- T167 --><div class="t167"><div class="t-container"><div class="t-prefix_2 t-col t-col_10"><div class="t-col t-col_5 t167__imgblock" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3238-6432-4263-b739-386430393837__noroot.png"> <img class="t167__img t-img" 
+src="images/tild3238-6432-4263-b739-386430393837__-__empty__noroot.png" data-original="images/tild3238-6432-4263-b739-386430393837__noroot.png" 
+imgfield="img" data-tu-max-width="920" data-tu-max-height="920" data-zoomable="yes" data-img-zoom-url="images/tild3238-6432-4263-b739-386430393837__noroot.png" alt=""><div class="t167__imgdescr t-descr" style="" field="imgdescr" itemprop="description"><p style="text-align: center;">Фотография татуировки Арины Усковой | HUMAN</p></div></div><div class="t-col t-col_8" style="margin:0; float:none; display:inherit;"><div field="text" class="t167__text t-text t-text_md" style=""><strong> </strong>Вторая татуировка, на сгибе локтя, это такая татуировка.<br /><br />Изначально я набила только фрагмент фрески (тянувшиеся друг к другу руки из «Сотворения Адама»), и для меня это одновременно был просто красивый эскиз и ещё воплощение моей любви к людям, коммуникации и социальным наукам. А потом мне показалось, что я хочу одновременно сузить и дополнить татуировку, и я добила сверху фразу «the creation» — это, с одной стороны, фрагмент от английского названия фрески («The Creation of Adam») и в этом смысле делает из этих двух татуировок общую фрагментарную. С другой стороны — это некоторая дань моему основному образованию — культурным исследованиям. Кроме того, для меня это ещё и про человеческий аспект — про сотворение чего-то большего при коммуникации и сотворении себя самой в течение жизни. Вот как-то так!</div></div></div></div></div></div><div id="rec588215199" class="r t-rec t-rec_pt_30 t-rec_pb_30" style="padding-top:30px;padding-bottom:30px; " data-animationappear="off" data-record-type="665" ><!-- T665 --><div class="t665"><div class="t-container"><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Почему именно это изображение отображает главную идею запечатления?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1491922643181" style="text-transform:uppercase;" itemprop="name">Арина</div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1491922643181" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Для меня это сложный вопрос. Фразу я нашла случайно (в каком-то списке латинских фраз) и сразу подумала, что она идеально подходит — у меня в голове уже была задумка такой «напоминалки» для себя. Возможно, есть более подходящие фразы, но эта оказалась в поле моего зрения в нужное время.<br /><br />А вот в случае второй татуировки мне сначала понравился эскиз (и он довольно распространённый, будем честны), а потом уже изображение обрастало для меня моим смыслом.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div><div class="t665__col t-col t-col_8 t-prefix_2" ><div class="t665__wrapper" itemscope itemtype="http://schema.org/Question"><div class="t665__question" style=""><div class="t665__question-text t-descr t-descr_xs" field="li_text__1683500694756" style="" itemprop="text"><div style="font-size:18px;" data-customstyle="yes">Что значит татуировка как явление для человека на твой взгляд?</div></div> <div class="t665__tail t665__tail_left"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#222"><path d="M1255,3123c0,0-0.7,5.7-2,8.8c-1.9,4.3-7.7,13.4-7.7,13.4s9.3-2.5,18-8.8c2.6-1.9,10.4-11,12.6-13.5"/></g></g></svg></div></div><div class="t665__answer" style="" itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer"><div class="t665__question-name t-uptitle t-uptitle_xs" field="li_title2__1683500694756" style="text-transform:uppercase;" itemprop="name">Арина</div> <div class="t665__question-text t-descr t-descr_xs" field="li_text2__1683500694756" style="" itemprop="text"><div style="font-size: 18px;" data-customstyle="yes">Мне кажется, татуировки в этом смысле многофункциональны: это может быть и напоминание, и украшение, и что-то ещё. Для меня, например, что-то ещё — это татуировка как акт контроля над своим телом. У меня много родинок, как и у моей мамы и бабушки, и они появляются и будут появляться всю жизнь в разных местах без моего осознанного решения. Ещё у меня есть шрам от операции на колене — он заметный, его можно убрать только пластической операцией, но суть даже не в том, как его можно убрать, а в том, что появился он тоже без моего особенного желания.<br /><br />В этом смысле для меня татуировка была способом некоторого внутреннего желания оставить на своем теле не только что-то, что я контролировать не могу, а ещё и что-то, что мне осознанно хотелось бы на нём видеть.</div></div> <div class="t665__tail t665__tail_right"><svg role="presentation" width="33px" height="24px" viewBox="0 0 33 24"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1244.000000, -3123.000000)" fill="#eee"><path d="M1275.13811,3123 C1272.95728,3125.43852 1265.08297,3134.61485 1262.52627,3136.47672 C1253.84354,3142.79977 1244.5,3145.28571 1244.5,3145.28571 C1244.5,3145.28571 1250.29058,3136.12799 1252.15133,3131.84682 C1253.51931,3128.69942 1254.18621,3123 1254.18621,3123" transform="translate(1259.819055, 3134.142857) scale(-1, 1) translate(-1259.819055, -3134.142857) "></path></g></g></svg></div></div></div> </div></div></div></div><div id="rec588212957" class="r t-rec t-rec_pt_60 t-rec_pb_60" style="padding-top:60px;padding-bottom:60px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong> </strong>В заключение можно сказать, что татуировки – это часть нашей культуры уже тысячелетия. Они могут быть выражением индивидуальности, культурного наследия, религиозной веры или просто олицетворять личные предпочтения. Татуировки могут быть искусством, а также могут помочь людям преодолеть болезнь, запечатлеть человеческие отношения.<br /><br />Когда вы делаете новую татуировку, она должна стать частью вас и вашей истории на всю жизнь. Наша антропологическая редакция убеждена, что татуировка – это нечто большее, чем просто рисунок на коже. Она может выражать вашу личность, стиль и то, что вы ощущаете внутри. Таким образом, татуировки – это шедевры, которые могут удивлять и вдохновлять весь мир своей красотой и значимостью.<br /><br /><br /><strong>Александра Душкина</strong><br /><br /></div></div></div></div></div><div id="rec588212958" class="r t-rec t-rec_pt_0" style="padding-top:0px;background-color:#2b3a32; " data-animationappear="off" data-record-type="345" data-bg-color="#2b3a32"><!-- T345 --><div class="t345" id="footer_588212958"><div class="t345-wrapper" style="border-top: 1px solid;border-top-color: #2b3a32;"><div class="t345-container t-container"><div class="t345-col t-col t-col_12"><div class="t345-content" style="height:120px"><div class="t345-text__wrapper"><div class="t345-text t-descr t-descr_xxs" style="color:#ffffff;"><div style="font-size: 18px;" data-customstyle="yes"><strong>© Научная коммуникация ИТМО</strong></div></div></div><div class="t345-socials"></div></div></div></div></div></div><script>function checkSize_588212958(){
+var rec = document.querySelector('#footer_588212958');
+if (!rec) return;
+var textContentEl = rec.querySelector('.t345-text');
+var iconsContentEl = rec.querySelector('.t345-socials');
+if (!textContentEl || !iconsContentEl) return;
+var contentWidth = textContentEl.offsetWidth + iconsContentEl.offsetWidth;
+var container = rec.querySelector('.t345-container');
+var containerWidth = container.offsetWidth - 30;
+if (contentWidth > containerWidth && containerWidth > 0) {
+container.classList.add('t345-socials_block');
+}
+else {
+container.classList.remove('t345-socials_block');
+}
+}
+t_onReady(function() {
+t_onFuncLoad('checkSize_588212958', function(){
+checkSize_588212958();
+window.addEventListener('resize', t_throttle(function(){checkSize_588212958();}));
+if (typeof jQuery !== 'undefined') {
+$('#rec588212958').bind('displayChanged', function () {
+checkSize_588212958();
+});
+} else {
+var rec = document.querySelector('#rec588212958');
+if (!rec) return;
+rec.addEventListener('displayChanged', function () {
+checkSize_588212958();
+});
+}
+});
+});</script></div></div><!--/allrecords-->

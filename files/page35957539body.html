@@ -1,0 +1,588 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6814180" data-tilda-page-id="35957539" data-tilda-page-alias="paleodiet-24042023" data-tilda-formskey="830df9cd711c355d0c5afac616814180" data-tilda-lazy="yes"><div id="rec585139524" class="r t-rec t-rec_pt_15 t-rec_pb_30" style="padding-top:15px;padding-bottom:30px; " data-animationappear="off" data-record-type="967" ><!-- T967 --><div id="nav585139524marker"></div><div class="tmenu-mobile tmenu-mobile_positionfixed" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><div class="t-menuburger t-menuburger_first "><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span><span style="background-color:#000000;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('585139524');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec585139524 .tmenu-mobile__menucontent_fixed {
+position: fixed;
+top: 64px;
+}
+#rec585139524 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav585139524" class="t967 t967__positionstatic tmenu-mobile__menucontent_hidden tmenu-mobile__menucontent_fixed" style="background-color: rgba(255,255,255,1); " data-bgcolor-hex="#ffffff" data-bgcolor-rgba="rgba(255,255,255,1)" data-navmarker="nav585139524marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="1" data-menu-items-align="" data-menu="yes"><div class="t967__maincontainer t967__c12collumns"><div class="t967__top" style=""><div class="t967__logo"><div style="display: block;"><a href="/" style="color:#000000;"><img class="t967__imglogo " 
+src="images/tild3933-3434-4436-a436-623536353466__human_logo_1.png" 
+imgfield="img" 
+style="min-width:150px;"
+alt="HUMAN"
+></a></div></div><nav class="t967__listwrapper t967__mobilelist" 
+aria-label="Основные разделы на странице"><ul class="t967__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px 0 0;"><a class="t-menu__link-item" 
+href="http://humaaanmedia.tilda.ws"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#000000;font-weight:400;">Главная</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="news"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#000000;font-weight:400;">Новости</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="longreads"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#000000;font-weight:400;">Статьи и тексты</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="announcements"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#000000;font-weight:400;">Анонсы</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="about_us"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#000000;font-weight:400;">О нас</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 0 0 35px;"><a class="t-menu__link-item" 
+href="recomendations"
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="6" 
+style="color:#000000;font-weight:400;">Редакция рекомендует</a></li></ul></nav><div class="t967__additionalwrapper"><div class="t-sociallinks"><div class="t-sociallinks__wrapper"><!-- new soclinks --><div class="t-sociallinks__item t-sociallinks__item_telegram"><a href="https://t.me/humaaanmedia" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#000000"/></svg></a></div><!-- /new soclinks --></div></div></div></div><div class="t967__bottom" ><div class="t967__middlelinewrapper"><div class="t967__linewrapper"><div class="t967__horizontalline" style=" "></div></div></div><div class="t967__bottomwrapper" style=""><nav class="t967__listwrapper t967__desktoplist" 
+aria-label="Основные разделы на странице"><ul class="t967__list t967__menualign_left" style="" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px 0 0;"><a class="t-menu__link-item" 
+href="http://humaaanmedia.tilda.ws" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#000000;font-weight:400;">Главная</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="news" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#000000;font-weight:400;">Новости</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="longreads" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#000000;font-weight:400;">Статьи и тексты</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="announcements" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="4" 
+style="color:#000000;font-weight:400;">Анонсы</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 35px;"><a class="t-menu__link-item" 
+href="about_us" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="5" 
+style="color:#000000;font-weight:400;">О нас</a></li><li class="t967__list-item" 
+role="none" 
+style="padding:0 0 0 35px;"><a class="t-menu__link-item" 
+href="recomendations" 
+target="_blank" 
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="6" 
+style="color:#000000;font-weight:400;">Редакция рекомендует</a></li></ul></nav></div></div></div></div><style>@media screen and (max-width: 980px) {
+#rec585139524 .tmenu-mobile{
+background-color: #ffffff;
+}
+}</style><style>@media screen and (max-width: 980px) {
+#rec585139524 .t967__mobile-burger span{
+background-color: #000000;
+}
+}</style><script>t_onReady(function () {
+t_onFuncLoad('t967_setLogoPadding', function () {
+t967_setLogoPadding('585139524');
+});
+});
+t_onReady(function() {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t967__desktoplist .t967__list-item a');
+});
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+window.addEventListener('resize', t_throttle(function () {
+t_menu__setBGcolor('585139524', '.t967');
+}));
+});
+t_onReady(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('585139524', '.t967');
+});
+});</script><script>t_onReady(function () {
+var rec = document.querySelector('#rec585139524');
+if (!rec) return;
+var wrapperBlock = rec.querySelector('.t967');
+if (!wrapperBlock) return;
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('585139524', '.t967');
+});
+});</script><style>#rec585139524 .t-menu__link-item{
+-webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+position: relative;
+}
+#rec585139524 .t-menu__link-item:not(.t-active):not(.tooltipstered)::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 20%;
+opacity: 0;
+width: 100%;
+height: 100%;
+border-bottom: 2px solid #d1d1d1;
+-webkit-box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+-moz-box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+box-shadow: inset 0px -1px 0px 0px #d1d1d1;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#rec585139524 .t-menu__link-item.t-active:not(.t978__menu-link){
+color:#f4515d !important; }
+#rec585139524 .t-menu__link-item.t-active::after {
+content: '';
+position: absolute;
+left: 0;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+opacity: 1;
+width: 100%;
+height: 100%;
+bottom: -2px;
+border-bottom: 2px solid #f4515d;
+-webkit-box-shadow: inset 0px -1px 0px 0px #f4515d;
+-moz-box-shadow: inset 0px -1px 0px 0px #f4515d;
+box-shadow: inset 0px -1px 0px 0px #f4515d;
+}
+#rec585139524 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover{
+color: #000000 !important; }
+#rec585139524 .t-menu__link-item:not(.t-active):not(.tooltipstered):hover::after{
+opacity: 1;
+bottom: -2px; }
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec585139524 .t-menu__link-item,
+#rec585139524 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><!--[if IE 8]><style>#rec585139524 .t967 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9ffffff', endColorstr='#D9ffffff');
+}</style><![endif]--></div><div id="rec580981576" class="r t-rec" style=" " data-animationappear="off" data-record-type="18" ><!-- cover --><div class="t-cover"
+id="recorddiv580981576"
+bgimgfield="img"
+style="height:100vh; background-image:url('images/tild6364-3561-4666-a161-306166323465__-__resize__20x__image.png');"
+><div class="t-cover__carrier" id="coverCarry580981576"data-content-cover-id="580981576"data-content-cover-bg="images/tild6364-3561-4666-a161-306166323465__image.png"data-display-changed="true"data-content-cover-height="100vh"data-content-cover-parallax="fixed"style="height:100vh; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6364-3561-4666-a161-306166323465__image.png"></div><div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#4c000000');"></div><div class="t-container"><div class="t-col t-col_12 "><div class="t-cover__wrapper t-valign_middle" style="height:100vh;"><div class="t001 t-align_center"><div class="t001__wrapper" data-hook-content="covercontent"><div class="t001__title t-title t-title_xl" style="" field="title"><p style="text-align: center;"><strong>Диета (ново)каменного века: нам нужно питаться как древние люди?</strong></p></div><span class="space"></span></div></div></div></div></div><!-- arrow --><div class="t-cover__arrow"><div class="t-cover__arrow-wrapper t-cover__arrow-wrapper_animated"><div class="t-cover__arrow_mobile"><svg role="presentation" class="t-cover__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592" style="enable-background:new 0 0 38.417 18.592;"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"/></g></svg></div></div></div><!-- arrow --></div></div><div id="rec580981577" class="r t-rec t-rec_pt_45 t-rec_pb_30" style="padding-top:45px;padding-bottom:30px; " data-record-type="127" ><!-- T119 --><div class="t119"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div class="t119__preface t-descr" style="opacity:0.70;" field="text"><div style="font-size: 24px;" data-customstyle="yes">Последние десять лет много <a href="https://www.medpulse.ru/health/387676.html?utm_source=yxnews&amp;utm_medium=desktop&amp;utm_referrer=https%3A%2F%2Fdzen.ru%2Fnews%2Fsearch%3Ftext%3D"><u>говорят</u></a> о палеодиете — питании в стиле наших далеких предков. По мнению ее адептов, рацион из большого количества мяса и яичного белка и совсем небольшого объема злаковых, овощей и фруктов должен сделать человека здоровее, энергичнее и стройнее. Британская ассоциация диетологов официально <a href="https://www.prweb.com/releases/2014/12/prweb12404367.htm"><u>назвала</u></a> «диету каменного века» вредной и научно необоснованной, но она остается популярной. Действительно ли нам нужно питаться как люди из древних цивилизаций? Чтобы разобраться, посмотрим, что ели и как себя чувствовали наши предки.</div></div></div></div></div></div><div id="rec580981578" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong> </strong>Как биологический вид современный человек или <em>Homo Sapiens</em> появился в Африке в интервале от 50 до 200 тысяч лет назад. И большую часть своего существования люди расселялись вдоль морского побережья, постепенно уходя в глубь лесов в поисках новых источников питания. Их жизнь была тесно связана с водоемами, вокруг которых со временем появлялись поселения. Даже кочевые народы предпочитали перемещаться в пределах видимости воды и ели все, что можно было добыть найти в ней и неподалеку: от мидий, водорослей и мяса водоплавающих птиц до злаков и ягод, которые росли рядом.</div></div></div></div></div><div id="rec580984383" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px; " data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6536-6337-4739-b030-653337363539__photo.png"> <img class="t107__width t-width t-width_8 t-img" 
+src="images/tild6536-6337-4739-b030-653337363539__-__empty__photo.png" data-original="images/tild6536-6337-4739-b030-653337363539__photo.png" 
+imgfield="img"
+alt=""><div class="t-container_8"><div class="t-col t-col_8 t107__title t-text" style="" field="title" itemprop="name"><div style="font-size: 14px;" data-customstyle="yes"><p style="text-align: center;">Мозаика «Рыбаки» | Национальный музей Триполи, Ливия.</p></div></div></div></div></div></div><div id="rec581151081" class="r t-rec t-rec_pt_0 t-rec_pb_15" style="padding-top:0px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Со временем Homo Sapiens научились не только готовить, но и заготавливать впрок пищу и напитки. <a href="https://www.archaeology.org/issues/294-1803/world"><u>Недавняя находка</u></a> остатков вина указывает на высокую степень развития виноделия на территории нынешней Грузии в седьмом тысячелетии до нашей эры. Алкогольные напитки в этом регионе бережно хранили в керамических сосудах и употребляли во время трапезы. Подобных исследований с каждым годом становится все больше, поэтому ученым проще выяснять особенности рациона Homo Sapiens в эпоху <a href="https://arheologija.ru/neolit-yanin-ychebnik/"><u>неолита</u></a>.</div></div></div></div></div><div id="rec581149908" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px; " data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3532-3563-4264-b762-613239373636__photo.jpg"> <img class="t107__widthauto t-img" 
+src="images/tild3532-3563-4264-b762-613239373636__-__empty__photo.jpg" data-original="images/tild3532-3563-4264-b762-613239373636__photo.jpg" 
+imgfield="img"
+alt=""><div class="t-container_8"><div class="t-col t-col_8 t107__title t-text" style="" field="title" itemprop="name"><p style="text-align: center;">Прием пищи | Wood Ronsaville Harlin Inc.</p></div></div></div></div></div><div id="rec582211962" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Больше всего о питании предков рассказывают археологические находки вроде обглоданных костей животных или каменных котлов для готовки, а также зубы и окаменевший кал. Последние две могут дать неожиданную информацию, например, о том, что неандертальцы, населявшие планету вместе с Homo Sapiens, ели самые настоящие каши из злаков и любили деликатесы.</div></div></div></div></div><div id="rec580981586" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong> </strong><strong style="font-size: 26px;">Как ученые узнают о рационе тысячелетней давности?</strong><br /><strong> </strong>По содержанию некоторых изотопов углерода в костях, зубах и волосах ученые могут узнать, какая растительная пища входила в постоянный рацион человека. Так как после смерти значения изотопов углерода–12 и углерода–13 не изменяются, то можно с высокой точностью исследовать археологические останки.<br /><br /> Ровно 30 лет назад, в 1993 году, с помощью детального химического анализа костей из захоронения в селении Грассхоппер (Аризона, США) ученые <a href="https://arheologija.ru/doistoricheskiy-ratsion-pitaniya/"><u>выявили </u></a>различия в питании мужчин и женщин, населявших этот регион в прошлом. Исследователь Джозеф Эззо измерил изотопные отношения углерода и азота в аминокислотах костей и воссоздал меню местных жителей с предельной точностью. Так, на рубеже XIII–XIV веков мужчины употребляли в пищу большое количество мяса, а рацион женщин состоял из диких растений и сельскохозяйственных культур. Но уже в 1325-1400 годы разделения по гендерному признаку не было. И мужчины, и женщины готовили разнообразные блюда из мяса и диких растений. Ученые предполагают, что такое изменение могло стать ответом на увеличение населения и изменение климата.<br /><br /> Содержимое желудков и фекалии тоже дают возможность узнать больше о блюдах, приготовленных и съеденных несколько сотен и тысяч лет назад. Главная особенность такого источника — изучение переваренной пищи конкретного индивидуума, что не дает представление о полноценном рационе. Такие исследования обычно включают в себя анализ микроскопических остатков пищи, пыльцы, ископаемых растений и паразитов. К примеру, при <a href="https://www.researchgate.net/publication/292692680_The_role_of_coprolite_analysis_in_archaeology">изучении </a>переваренной пыльцы из 45 образцов копролитов из каньона Глен (Юта, США), ученые узнали не только о съеденных растениях и сезонных занятиях, но и о употреблении можжевеловых настоек.<br /><br /> При изучении особенностей доисторической жизни наших предков антропологи полагаются и на другие источники информации: данные об окружающей среде и микроклимате, остатки растений, артефакты человеческой жизнедеятельности и древнее искусство. Вот несколько типичных археологических находок у морского побережья, где останавливались люди:<br /><br /></div></div></div></div></div><div id="rec580987437" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="585" ><!-- T585 --><div class="t585"><div class="t-container"><div class="t-col t-col_8 t-prefix_2"><div class="t585__accordion" data-accordion="false" data-scroll-to-expanded="false"><div class="t585__wrapper"><div class="t585__header " style="border-top: 1px solid #eee;"><button type="button" 
+class="t585__trigger-button" 
+aria-controls="accordion1_580987437" 
+aria-expanded="false"
+><span class="t585__title t-name t-name_xl" field="li_title__1480611044356" style=""><u>Кости птиц</u></span><span class="t585__icon"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: transparent;"></span></span><span class="t585__icon t585__icon-hover"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: #eee;"></span></span></button></div><div class="t585__content" 
+id="accordion1_580987437"
+hidden ><div class="t585__textwrapper"><div class="t585__text t-descr t-descr_xs" field="li_descr__1480611044356" style=""><div style="font-size:20px;" data-customstyle="yes">С их помощью можно узнать о сезонных занятиях древних людей.</div></div></div></div></div></div></div><div class="t-col t-col_8 t-prefix_2"><div class="t585__accordion" data-accordion="false" data-scroll-to-expanded="false"><div class="t585__wrapper"><div class="t585__header " style="border-top: 1px solid #eee;"><button type="button" 
+class="t585__trigger-button" 
+aria-controls="accordion2_580987437" 
+aria-expanded="false"
+><span class="t585__title t-name t-name_xl" field="li_title__1480611048442" style=""><u>Останки рыб</u></span><span class="t585__icon"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: transparent;"></span></span><span class="t585__icon t585__icon-hover"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: #eee;"></span></span></button></div><div class="t585__content" 
+id="accordion2_580987437"
+hidden ><div class="t585__textwrapper"><div class="t585__text t-descr t-descr_xs" field="li_descr__1480611048442" style=""><span style="font-size: 20px;">Позволяют зафиксировать, как при&nbsp;регулярной ловле менялись организм человека и биологическое равновесие местности.</span><br /><br /></div></div></div></div></div></div><div class="t-col t-col_8 t-prefix_2"><div class="t585__accordion" data-accordion="false" data-scroll-to-expanded="false"><div class="t585__wrapper"><div class="t585__header " style="border-top: 1px solid #eee;"><button type="button" 
+class="t585__trigger-button" 
+aria-controls="accordion3_580987437" 
+aria-expanded="false"
+><span class="t585__title t-name t-name_xl" field="li_title__1489600117321" style=""><u>Крючки, сети и другие артефакты</u></span><span class="t585__icon"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: transparent;"></span></span><span class="t585__icon t585__icon-hover"><span class="t585__lines"><svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#222222"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg></span><span class="t585__circle" style="background-color: #eee;"></span></span></button></div><div class="t585__content" 
+id="accordion3_580987437"
+hidden ><div class="t585__textwrapper"><div class="t585__text t-descr t-descr_xs" field="li_descr__1489600117321" style=""><div style="font-size:20px;" data-customstyle="yes">Благодаря им можно реконструировать древние методы рыбной ловли как с берега, так и в море.</div></div></div></div></div></div><div class="t585__border" style="height: 1px; background-color: #eee;"></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t585_init', function () {
+t585_init('580987437');
+});
+});</script></div><div id="rec580981588" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong> </strong><strong style="font-size: 26px;">А были ли древние люди здоровыми?</strong><br /><br />Зачастую для ископаемых останков установить причину смерти почти невозможно. Но исследователи могут определять состояние здоровья по различным признакам — прежде всего, по структуре костей и состоянию зубов. И здесь важно отметить, что антропологи <a href="https://vk.com/doc-41371964_528027444?hash=3oHWYzNEIRAHpi0kgQDgVWs11Yd1FZQ2RuYkzlI8ndH&amp;dl=MHgsR9zBIlMuDCZqnZYshw9sODjute0BMmDPTqlapoH"><u>зафиксировали</u></a> резкое ухудшение качества зубов у людей в эпоху неолита. Именно тогда появляется кариес — главный побочный эффект перехода на высокоуглеводную диету, основанную на злаковых культурах.<br /><br /><p style="text-align: left;">В эпоху развития земледелия и скотоводства люди стали все чаще заражаться зоонозными инфекциями от одомашненных животных. Так, <a href="https://www.academia.edu/21294744/Origin_evolution_and_paleoepidemiology_of_brucellosis"><u>исследователи обнаружили</u></a> 16 случаев вероятного <a href="https://www.who.int/ru/news-room/fact-sheets/detail/brucellosis"><u>бруцеллеза</u></a> у жителей древнеримского города Геркуланум, погибших в ходе извержения вулкана Везувий в 79 году до нашей эры. Эта инфекция передается человеку от животного через сырое молоко или необработанное мясо. И несмотря на то, что даже несколько тысячелетий назад эта болезнь не приводила к летальному исходу, бруцеллез нередко заканчивался инвалидностью.</p><br /><p style="text-align: left;">В целом, переход к земледелию был большим стрессом для человечества. В первую очередь, это долговременная адаптация к новому типу питания, которая приводила к массовым зубным патологиям. <a href="https://doi.org/10.1002/(SICI)1099-1212(199701)7:1%3C100::AID-OA305%3E3.0.CO;2-O"><u>Анализ</u></a> детского группового захоронения в Телль-Юнаците (Болгария) дает представление о частых болезнях бронзового века, примерно с 3300 по 1200 год до нашей эры. В большинстве останков были отмечены костные патологии, связанные с дефицитом микроэлементов (витамина С и железа), хроническими инфекциями или наличием гельминтов.</p></div></div></div></div></div><div id="rec582213429" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style=""><strong style="font-size: 26px;">Каким было меню наших предков?</strong><br /><br />Примерно в III веке до нашей эры в Китае была написана первая кулинарная <a href="https://knizhnik.org/dzhejms-miller/eda-i-evoljuczija-istorija-homo-sapiens-v-tarelke/1"><u>книга</u></a> под названием «Яншэнь фань», что в переводе означает «Здоровая еда». Согласно китайским традициям еда должна не только насыщать, но и лечить тело и душу. Почему бы не попробовать приготовить что-то по старинной рецептуре?<br /><br /></div></div></div></div></div><div id="rec580994482" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px; " data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3538-3234-4536-b737-396135313966__photo.png"> <img class="t107__width t-width t-width_8 t-img" 
+src="images/tild3538-3234-4536-b737-396135313966__-__empty__photo.png" data-original="images/tild3538-3234-4536-b737-396135313966__photo.png" 
+imgfield="img"
+alt=""><div class="t-container_8"><div class="t-col t-col_8 t107__title t-text" style="" field="title" itemprop="name"><div style="font-size:16px;" data-customstyle="yes"><p style="text-align: center;">Приготовление обеда | Wikimedia Commons</p></div></div></div></div></div></div><div id="rec580994796" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Одно из наиболее простых в приготовлении блюд — курица с овощами по рецепту из «Яншэнь фань». Для него понадобятся куриное мясо, морковь и лук. Все ингредиенты нужно нарезать соломкой и в течение нескольких минут обжарить на горячей сковороде с жиром. Туда же добавляются специи: чайная ложка тростникового сахара и щепотка имбиря. Мясо с овощами нужно довести до готовности в течение 5 минут на среднем огне. И, разумеется, выложить все в глубокую миску и есть палочками, как делали раньше и продолжают до сих пор китайцы.<br /><br /> Кстати, традиция нарезать все ингредиенты очень мелко уходит корнями в глубокую древность. В Китае на заре цивилизации был недостаток не только еды, но и дерева. И чтобы тратить меньше древесины для приготовления пищи, все ингредиенты мелко шинковали, уменьшая время термической обработки.<br /><br />На другой стороне Евразии царили иные представления о кулинарии. Примерно до III века до нашей эры древнегреческая кухня, оказавшая влияние на всю современную европейскую, была простой. Из одних и тех же продуктов можно было приготовить множество разных блюд. Какие ингредиенты можно было встретить на кухне в греческом полисе?</div></div></div></div></div><div id="rec581195081" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3238-3338-4431-a635-396238306235__photo.jpg"> <img class="t107__width t-width t-width_8 t-img" 
+src="images/tild3238-3338-4431-a635-396238306235__-__empty__photo.jpg" data-original="images/tild3238-3338-4431-a635-396238306235__photo.jpg" 
+imgfield="img"
+alt=""><div class="t-container_8"><div class="t-col t-col_8 t107__title t-text" style="" field="title" itemprop="name"><p style="text-align: center;">Праздник в честь дня рождения Ирода | Эдвард Армитидж, 1868 г.</p></div></div></div></div></div><div id="rec580995202" class="r t-rec t-rec_pt_0 t-rec_pb_15" style="padding-top:0px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">В то время в Европе были только две злаковые культуры — пшеница и ячмень. А из мяса на столе можно было увидеть ягнятину, козлятину, свинину, домашнюю птицу и дичь. Говядина в пищу не употреблялась, поскольку в то время быки были основной рабочей силой, а коров содержали для молока. Кстати, последнее в чистом виде использовали исключительно как лекарство. Сливочное масло тоже использовали в лечебных целях — для всех остальных случаев на кухне каждой хозяйки было оливковое. Так выглядел <a href="https://knizhnik.org/dzhejms-miller/eda-i-evoljuczija-istorija-homo-sapiens-v-tarelke/1"><u>стандартный рацион</u></a> зажиточного грека в X–III веке до нашей эры. У бедняков же пища была менее жирной, но зато с большим содержанием белков. Основу рациона обычно составляли бобовые культуры — чечевица, фасоль, горох. Ни один стол не обходился без хлеба из ячменной муки или каши на основе этого злака с обилием оливкового масла — основным кулинарным жиром того времени.<br /><br />Еще одной национальной кухней, уходящей корнями в глубокую древность, является индийская. Она <a href="https://knizhnik.org/dzhejms-miller/eda-i-evoljuczija-istorija-homo-sapiens-v-tarelke/1"><u>отличалась</u></a> обилием вегетарианских блюд, которые стали основой питания одновременно среди бедных и богатых. Несколько тысячелетий назад высшая каста священнослужителей–брахманов отказалась от мяса, чтобы очиститься. Как подражание брахманам вегетарианство распространилось и среди других каст. Бедняки же не употребляли в пищу мясо, потому что не могли себе его позволить.</div></div></div></div></div><div id="rec580995431" class="r t-rec t-rec_pt_15 t-rec_pb_15" style="padding-top:15px;padding-bottom:15px; " data-record-type="3" ><!-- T107 --><div class="t107"><div class="t-align_center" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3731-3666-4433-b030-616532646436__photo.jpg"> <img class="t107__width t-width t-width_8 t-img" 
+src="images/tild3731-3666-4433-b030-616532646436__-__empty__photo.jpg" data-original="images/tild3731-3666-4433-b030-616532646436__photo.jpg" 
+imgfield="img"
+alt=""><div class="t-container_8"><div class="t-col t-col_8 t107__title t-text" style="" field="title" itemprop="name"><p style="text-align: center;">Четыре женщины, продающие пряности, овощи и фрукты | Wikimedia Commons</p></div></div></div></div></div><div id="rec580995659" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">Основу питания составляли злаковые и бобовые культуры: пшеница, рис, чечевица, фасоль и горох. Для обогащения вкуса пресной еды индусы начали широко применять приправы. Этот кулинарный прием не обеззараживает пищу, зато придает одним и тем же блюдам разные вкусовые оттенки. Индийская кухня полна не только пряных и обжигающе острых рецептов, но и десертных блюд. Это сладкие блинчики и оладьи, пирожки с начинками, фруктовые смеси в сиропе и блюда из подслащенного коровьего молока.<br /><br />Одно из таких блюд — гулаб джамун или «джам пал». Это шарики из уваренного молока «кхоя», выдержанные в сиропе с розовой водой, кардамоном и шафраном. Для приготовления блюда молоко часами уваривают на медленном огне до состояния густого пюре. В эту массу добавляют немного муки и формируют шарики среднего размера. Их обжаривают до золотистой корочки в топленом сливочном масле (гхи), а затем некоторое время выдерживают в сладком розовом сиропе. Спустя нескольких часов на индийской кухне получаются очень калорийные, богатые белками, жирами и сахарами шарики. В 100 граммах такого лакомства содержится около 250–300 ккал.</div></div></div></div></div><div id="rec581152109" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; " data-record-type="363" ><!-- T029 --><div class="t029"><div class="t029__container t-container"><div class="t029__col t-col t-col_8"><div class="t029__linewrapper" style="opacity:0.2;"><div class="t029__opacity t029__opacity_left" style="background-image: -moz-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(right, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(right, #000000, rgba(0,0,0,0));"></div><div class="t029__line" style="background: #000000;"></div><div class="t029__opacity t029__opacity_right" style="background-image: -moz-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -webkit-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -o-linear-gradient(left, #000000, rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, #000000, rgba(0,0,0,0));"></div></div></div></div></div></div><div id="rec581152368" class="r t-rec t-rec_pt_0 t-rec_pb_15" style="padding-top:0px;padding-bottom:15px; " data-record-type="106" ><!-- T004 --><div class="t004"><div class="t-container "><div class="t-col t-col_8 t-prefix_2"><div field="text" class="t-text t-text_md " style="">И вот мы на финишной прямой нашего историко-кулинарного повествования. Что же мы успели выяснить? Рацион питания наших предков напрямую зависел от места обитания. Но несмотря на ограниченность ресурсов, люди в древности обладали богатой фантазией и придумывали разнообразные блюда из одинакового набора ингредиентов. Но даже эта находчивость не всегда помогала восполнить дефицит полезных веществ, который отмечают антропологи.<br /><br />Сейчас на нашем столе могут встретиться продукты с разных континентов, и мы это принимаем как данность. Однако традиции питания далеких предков нашли отражения в национальных кухнях, сформировав вкусовые предпочтения современных людей.<br /><br />Но если мы все еще похожи на своих древних предков, надо ли питаться как они? Современная доказательная медицина с осторожностью относится к любым диетам и ограничениям в пище — для человека жизненно важно пищевое разнообразие. Поэтому питаться надо так, чтобы вам было вкусно и интересно, открывая новые кулинарные горизонты.<br /><br /><br /><br /><strong>Александра Корягина</strong></div></div></div></div></div><div id="rec580981589" class="r t-rec t-rec_pt_0" style="padding-top:0px;background-color:#2b3a32; " data-animationappear="off" data-record-type="345" data-bg-color="#2b3a32"><!-- T345 --><div class="t345" id="footer_580981589"><div class="t345-wrapper" style="border-top: 1px solid;border-top-color: #2b3a32;"><div class="t345-container t-container"><div class="t345-col t-col t-col_12"><div class="t345-content" style="height:120px"><div class="t345-text__wrapper"><div class="t345-text t-descr t-descr_xxs" style="color:#ffffff;"><div style="font-size: 18px;" data-customstyle="yes"><strong>© Научная коммуникация ИТМО</strong></div></div></div><div class="t345-socials"></div></div></div></div></div></div><script>function checkSize_580981589(){
+var rec = document.querySelector('#footer_580981589');
+if (!rec) return;
+var textContentEl = rec.querySelector('.t345-text');
+var iconsContentEl = rec.querySelector('.t345-socials');
+if (!textContentEl || !iconsContentEl) return;
+var contentWidth = textContentEl.offsetWidth + iconsContentEl.offsetWidth;
+var container = rec.querySelector('.t345-container');
+var containerWidth = container.offsetWidth - 30;
+if (contentWidth > containerWidth && containerWidth > 0) {
+container.classList.add('t345-socials_block');
+}
+else {
+container.classList.remove('t345-socials_block');
+}
+}
+t_onReady(function() {
+t_onFuncLoad('checkSize_580981589', function(){
+checkSize_580981589();
+window.addEventListener('resize', t_throttle(function(){checkSize_580981589();}));
+if (typeof jQuery !== 'undefined') {
+$('#rec580981589').bind('displayChanged', function () {
+checkSize_580981589();
+});
+} else {
+var rec = document.querySelector('#rec580981589');
+if (!rec) return;
+rec.addEventListener('displayChanged', function () {
+checkSize_580981589();
+});
+}
+});
+});</script></div></div><!--/allrecords-->

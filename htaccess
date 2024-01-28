@@ -1,0 +1,140 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page34092740.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^sport-06042023$ page35500130.html [NC]
+RewriteRule ^sport-06042023/$ page35500130.html [NC]
+
+RewriteRule ^romania-26022023$ page34300032.html [NC]
+RewriteRule ^romania-26022023/$ page34300032.html [NC]
+
+RewriteRule ^fingerprint-22022023$ page34259218.html [NC]
+RewriteRule ^fingerprint-22022023/$ page34259218.html [NC]
+
+RewriteRule ^announcements$ page34161189.html [NC]
+RewriteRule ^announcements/$ page34161189.html [NC]
+
+RewriteRule ^mumii$ page35547440.html [NC]
+RewriteRule ^mumii/$ page35547440.html [NC]
+
+RewriteRule ^body-03032023$ page34502975.html [NC]
+RewriteRule ^body-03032023/$ page34502975.html [NC]
+
+RewriteRule ^transhuman-100423$ page35624270.html [NC]
+RewriteRule ^transhuman-100423/$ page35624270.html [NC]
+
+RewriteRule ^about_us$ page34287579.html [NC]
+RewriteRule ^about_us/$ page34287579.html [NC]
+
+RewriteRule ^paleodiet-24042023$ page35957539.html [NC]
+RewriteRule ^paleodiet-24042023/$ page35957539.html [NC]
+
+RewriteRule ^drevnieohotniki-06032023$ page34606301.html [NC]
+RewriteRule ^drevnieohotniki-06032023/$ page34606301.html [NC]
+
+RewriteRule ^bdsm-010523$ page35658277.html [NC]
+RewriteRule ^bdsm-010523/$ page35658277.html [NC]
+
+RewriteRule ^faces-07032023$ page34642501.html [NC]
+RewriteRule ^faces-07032023/$ page34642501.html [NC]
+
+RewriteRule ^interview-17042023$ page35824010.html [NC]
+RewriteRule ^interview-17042023/$ page35824010.html [NC]
+
+RewriteRule ^ancient_bows-16032023$ page34923473.html [NC]
+RewriteRule ^ancient_bows-16032023/$ page34923473.html [NC]
+
+RewriteRule ^crabs-17032023$ page34924248.html [NC]
+RewriteRule ^crabs-17032023/$ page34924248.html [NC]
+
+RewriteRule ^chinesewoman-24032023$ page35166619.html [NC]
+RewriteRule ^chinesewoman-24032023/$ page35166619.html [NC]
+
+RewriteRule ^children-28032023$ page35267106.html [NC]
+RewriteRule ^children-28032023/$ page35267106.html [NC]
+
+RewriteRule ^ice_age-20032023$ page35023456.html [NC]
+RewriteRule ^ice_age-20032023/$ page35023456.html [NC]
+
+RewriteRule ^iceage-290323$ page35267456.html [NC]
+RewriteRule ^iceage-290323/$ page35267456.html [NC]
+
+RewriteRule ^recomendations$ page35207741.html [NC]
+RewriteRule ^recomendations/$ page35207741.html [NC]
+
+RewriteRule ^stone-29032023$ page35304945.html [NC]
+RewriteRule ^stone-29032023/$ page35304945.html [NC]
+
+RewriteRule ^genes-04042023$ page35304948.html [NC]
+RewriteRule ^genes-04042023/$ page35304948.html [NC]
+
+RewriteRule ^news$ page35444266.html [NC]
+RewriteRule ^news/$ page35444266.html [NC]
+
+RewriteRule ^teeth-08042023$ page35572494.html [NC]
+RewriteRule ^teeth-08042023/$ page35572494.html [NC]
+
+RewriteRule ^longreads$ page35650783.html [NC]
+RewriteRule ^longreads/$ page35650783.html [NC]
+
+RewriteRule ^bones-120423$ page35716569.html [NC]
+RewriteRule ^bones-120423/$ page35716569.html [NC]
+
+RewriteRule ^ageofbirth-19042023$ page35922069.html [NC]
+RewriteRule ^ageofbirth-19042023/$ page35922069.html [NC]
+
+RewriteRule ^drugs-210423$ page35958526.html [NC]
+RewriteRule ^drugs-210423/$ page35958526.html [NC]
+
+RewriteRule ^livebefore-240423$ page36052893.html [NC]
+RewriteRule ^livebefore-240423/$ page36052893.html [NC]
+
+RewriteRule ^digitalnomads-30042023$ page36220980.html [NC]
+RewriteRule ^digitalnomads-30042023/$ page36220980.html [NC]
+
+RewriteRule ^sewing-25042023$ page36071249.html [NC]
+RewriteRule ^sewing-25042023/$ page36071249.html [NC]
+
+RewriteRule ^habits-01052023$ page36241548.html [NC]
+RewriteRule ^habits-01052023/$ page36241548.html [NC]
+
+RewriteRule ^severed-hand-01052023$ page36241553.html [NC]
+RewriteRule ^severed-hand-01052023/$ page36241553.html [NC]
+
+RewriteRule ^books-for-anthropologists-05052023$ page36371581.html [NC]
+RewriteRule ^books-for-anthropologists-05052023/$ page36371581.html [NC]
+
+RewriteRule ^why-people-kill-06052023$ page36379631.html [NC]
+RewriteRule ^why-people-kill-06052023/$ page36379631.html [NC]
+
+RewriteRule ^homosoveticus-07052023$ page36384530.html [NC]
+RewriteRule ^homosoveticus-07052023/$ page36384530.html [NC]
+
+RewriteRule ^firsttool-060523$ page36385757.html [NC]
+RewriteRule ^firsttool-060523/$ page36385757.html [NC]
+
+RewriteRule ^full-moon-07052023$ page36398278.html [NC]
+RewriteRule ^full-moon-07052023/$ page36398278.html [NC]
+
+RewriteRule ^protests-07052023$ page36400467.html [NC]
+RewriteRule ^protests-07052023/$ page36400467.html [NC]
+
+RewriteRule ^time-for-trip-070523$ page36402405.html [NC]
+RewriteRule ^time-for-trip-070523/$ page36402405.html [NC]
+
+RewriteRule ^request-07052023$ page36408158.html [NC]
+RewriteRule ^request-07052023/$ page36408158.html [NC]
+
+RewriteRule ^russian-national-clothes-070523$ page36413725.html [NC]
+RewriteRule ^russian-national-clothes-070523/$ page36413725.html [NC]
+
+RewriteRule ^tattoos-070523$ page36414632.html [NC]
+RewriteRule ^tattoos-070523/$ page36414632.html [NC]
+
+
